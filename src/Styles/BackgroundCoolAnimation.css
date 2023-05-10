@@ -1,0 +1,9 @@
+.coolAnimation{
+    height: 30rem;
+    width: auto;
+    display: flex;
+    position: absolute;
+    top: 4rem;
+    right: 8rem;
+    z-index: 4;
+}

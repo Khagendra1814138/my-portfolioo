@@ -20,8 +20,8 @@ const ScrollIndicator = () => {
     }, []);
 
     return (
-        <div className="progressMainWrapper">
-            <div className="progressMainStyle" style={{width: `${scrollTop}%`}}></div>
+        <div className="progress-Frame">
+            <div className="progress-Bar" style={{width: `${scrollTop}%`}}></div>
         </div>
     );
 };

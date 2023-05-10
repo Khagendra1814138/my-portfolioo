@@ -1,20 +1,34 @@
-.home{
-    height: auto;
-    width: auto;
-    margin: auto;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    overflow: hidden;
+@import "../Animations/Animations.css";
+
+:root{
+    --spaceInvader: #323955;
+    --backgroundPatternSVG: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%232F3544' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23323955'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E")
+    
 }
 
+.home{
+    overflow: hidden;
+    padding-top: 0rem;
+    padding-bottom: 20rem;
+}
+.avatarSection{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: var(--backgroundPatternSVG);
+
+    background-attachment: fixed;
+}
 .ring{
-    height: 20.5rem;
-    width: 20.5rem;
-    padding: 20px;
+    height: 21rem;
+    width: 21rem;
+  
     border: 4px solid aquamarine;
     border-radius: 50%;
     margin: auto;
     margin-top: 10rem;
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,6 +63,7 @@
     align-items: center;
     transition: ease 0.5s;
     filter: brightness(90%);
+    background-position: center;
 }
 .profile:hover{
     transform: scale(1.1);
@@ -73,7 +88,7 @@
     animation-delay: 1s;
 }
 .bioFrame h2{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     opacity: 0;
     animation: slideBottom 0.5s ease forwards;
@@ -99,7 +114,7 @@
     display: block;
     position: absolute;
     border-radius: 100% 50%;
-    background-color: black;
+    background-color: #171D33;
     width: 55%;
     height: 100%;
     transform: translate(85%, 60%);
@@ -121,8 +136,8 @@
     height: auto;
     width: auto;
     padding-top: 10rem;
-    padding-bottom: 10rem;
-    background: black;
+    padding-bottom: 14rem;
+    background: #171D33;
     margin: auto;
     font-size: 50px;
     display: flex;
@@ -153,7 +168,7 @@
     display: block;
     position: absolute;
     border-radius: 100% 50%;
-    background-color: black;
+    background-color: #171D33;
     width: 55%;
     height: 100%;
     transform: translate(-4%, 40%);
@@ -177,17 +192,30 @@
 .grid{
     height: auto;
     width: auto;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 2rem;
+    background-color: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.grid p{
+    height: 18rem;
+    width: auto;
+    font-size: 20px;
+    padding: 20px;
+    border: 6px dotted #323955;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .about-image{
-    height: 200px;
-    width: 200px;
+    height: 20rem;
+    width: 20rem;
     border-radius: 50%;
-
+    margin: auto;
     position: relative;
     display: flex;
     justify-content: center;
@@ -204,11 +232,12 @@
 }
 .about-image .circle-spin{
     position: absolute;
+    margin: auto;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border-top: 4px solid black;
-    border-bottom:  4px solid black;
+    border-top: 4px solid transparent;
+    border-bottom:  4px solid transparent;
     border-left: 4px solid teal;
     border-right: 4px solid teal;
 
@@ -219,113 +248,18 @@
     animation-delay: 1s, 2s;
 }
 
-/*ANIMATIONS*/
-@keyframes slideRight {
-    0%{
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-
-    100%{
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes slideLeft {
-    0%{
-        transform: translateX(100px);
-        opacity: 0;
-    }
-
-    100%{
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes slideTop {
-    0%{
-        transform: translateY(100px);
-        opacity: 0;
-    }
-
-    100%{
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-
-@keyframes slideBottom {
-    0%{
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-
-    100%{
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes zoomIn {
-    0%{
-        transform: scale(0);
-        opacity: 0;
-    }
-
-    100%{
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-@keyframes floatImage {
-    0%{
-        transform: translateY(0);
-    }
-
-    50%{
-        transform: translateY(22px);
-    }
-
-    100%{
-        transform: translateY(0);
-    }
-}
-@keyframes floatImagetwo {
-    0%{
-        transform: translateY(0);
-    }
-
-    50%{
-        transform: translateY(-20px);
-    }
-
-    100%{
-        transform: translateY(0);
-    }
-}
-
-
-@keyframes rotate {
-    0% {transform: rotate(0deg);}
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 
 .hobbies-Frame{
     height: auto;
     width: auto;
     margin: auto;
-    margin-top: 8rem;
+    margin-top: 4rem;
+    background-image: url(../Images/pattern.jpg);
+    border-radius: 20px;
+    border: 6px dotted #323955;
 }
 .hobbies-Frame h1{
-    font-size: 40px;  
+    font-size: 50px;  
 }
 .hobbies-Frame span{
     color: aquamarine;
@@ -334,17 +268,315 @@
     height: auto;
     width: auto;
     margin: auto;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    grid-gap: 2rem 8rem ;
+    /* display: grid;
+    background-color: transparent;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto; */
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 2rem 2rem ;
+    padding: 2rem;
+    border-radius: 10px;
     justify-content: center;
     align-items: center;
 }
+@media only screen and (max-width: 74rem) {
+    .six-gride{
+        grid-template-columns: auto auto;
+    }
+
+    .grid{
+        display: block;
+    }
+}
+
 .hobbies-frame{
     height: 10rem;
     width: 10rem;
-    background-color: green;
+    background-color: slategray;
     padding: 10px;
     border-radius: 10px;
+    font-size: 20px;
 }
+
+.skills-Frame{
+    height: auto;
+    width: auto;
+    margin: auto;
+    margin-top: 10rem;
+    background-image: var(--backgroundPatternSVG);
+    background-attachment: fixed;
+}
+
+.skills-Frame h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.skills-Frame h1 span{
+    color: aquamarine;
+}
+.skills-Frame h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+.skills-Frame h2 span{
+    color: aquamarine;
+}
+
+
+
+.box {
+    width: 20rem;
+    height: 20rem;
+    padding: 1rem;
+    border-radius: 50%;
+    margin: auto;
+    border: 2px dashed rgba(255,255,255,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: morph 2s ease-in-out infinite both alternate, 
+        bounceRight 4s ease-in-out infinite;
+    border: 4px solid aquamarine;
+}
+
+.spin-container {
+    width: 20rem;
+    height: 20rem;
+    animation: spin 12s ease-in-out infinite alternate;
+    position: relative;
+}
+
+
+.shape {
+    width: 100%;
+    height: 100%;
+    transition: border-radius 1s ease-out;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    animation: morph 8s ease-in-out infinite both alternate;
+    position: absolute;
+    overflow: hidden;
+    z-index: 5;
+    border: 4px solid teal;
+}
+
+.bd {
+    width: 142%;
+    height: 142%;
+    position: absolute;
+    left: -21%;
+    top: -21%;
+    background-image: url('../Images/Profile.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    color: #003;
+    font-size: 5vw;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    animation: spin 12s ease-in-out infinite alternate-reverse;
+    opacity: 1;
+    z-index: 2;
+}
+
+.personalities-Frame{
+    height: auto;
+    width: auto;
+    margin: auto;
+    background: none;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+.personalities-Row{
+    height: auto;
+    /* min-width: 500px; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.personalities-MiddleRow{
+    height: auto;
+    width: 80%;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.row{
+    height: 500px;
+    width: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.row-middle{
+    height: 500px;
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid white;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+.items{
+    height: 200px;
+    width: 200px;
+    /* background-color: rebeccapurple; */
+}
+
+/*////////////////////////////////////////----FLOATING SHAPES----//////////////////////////////////////////////////////////////////////////////////*/
+.diamond-narrow {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 70px solid #323955;
+    position: absolute;
+    top: 15rem;
+    left: 20rem;
+    animation: floatImage 4s ease-in-out infinite;
+    
+}
+.diamond-narrow:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 70px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 70px solid #323955;
+}
+
+  
+
+.diamond-shield {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 20px solid #323955;
+    position: absolute;
+    top: 35rem;
+    right: 15rem;
+    animation: bounceRight 4s ease-in-out infinite;
+}
+
+.diamond-shield:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 70px solid #323955;
+}
+
+.moon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 0 var(--spaceInvader);
+    position: absolute;
+    top: 15rem;
+    right: 15rem;
+    animation: zoomIn 4s ease-in-out infinite;
+}
+
+.circleFrame{
+    width: 10rem;
+    height: 10rem;
+    border:4px solid var(--spaceInvader);
+    position: absolute;
+    top: 88rem;; 
+    left: 10rem;
+    margin:auto;
+    border-radius:50%; 
+    animation: floatImage 5s ease-in-out infinite;
+}
+  
+.circle{
+    width: 50px;
+    height: 50px;
+    background: var(--spaceInvader);
+    border-radius:50%;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    overflow:hidden;
+    margin:auto;
+    animation: circle 6s linear infinite;
+}
+
+@keyframes circle{
+    0%{
+        transform:rotate(0deg)
+                translate(-78px)
+                rotate(0deg);
+
+    }
+    100%{
+        transform:rotate(360deg)
+                translate(-78px)
+                rotate(-360deg);
+    }
+}
+
+  
+.space-invader {
+    box-shadow: 0 0 0 1em var(--spaceInvader),
+    0 1em 0 1em var(--spaceInvader),
+    -2.5em 1.5em 0 .5em var(--spaceInvader),
+    2.5em 1.5em 0 .5em var(--spaceInvader),
+    -3em -3em 0 0 var(--spaceInvader),
+    3em -3em 0 0 var(--spaceInvader),
+    -2em -2em 0 0 var(--spaceInvader),
+    2em -2em 0 0 var(--spaceInvader),
+    -3em -1em 0 0 var(--spaceInvader),
+    -2em -1em 0 0 var(--spaceInvader),
+    2em -1em 0 0 var(--spaceInvader),
+    3em -1em 0 0 var(--spaceInvader),
+    -4em 0 0 0 var(--spaceInvader),
+    -3em 0 0 0 var(--spaceInvader),
+    3em 0 0 0 var(--spaceInvader),
+    4em 0 0 0 var(--spaceInvader),
+    -5em 1em 0 0 var(--spaceInvader),
+    -4em 1em 0 0 var(--spaceInvader),
+    4em 1em 0 0 var(--spaceInvader),
+    5em 1em 0 0 var(--spaceInvader),
+    -5em 2em 0 0 var(--spaceInvader),
+    5em 2em 0 0 var(--spaceInvader),
+    -5em 3em 0 0 var(--spaceInvader),
+    -3em 3em 0 0 var(--spaceInvader),
+    3em 3em 0 0 var(--spaceInvader),
+    5em 3em 0 0 var(--spaceInvader),
+    -2em 4em 0 0 var(--spaceInvader),
+    -1em 4em 0 0 var(--spaceInvader),
+    1em 4em 0 0 var(--spaceInvader),
+    2em 4em 0 0 var(--spaceInvader);
+    background: var(--spaceInvader);
+    width: 1rem;
+    height: 1rem;
+    overflow: hidden;
+    margin: 50px 0 70px 65px;
+
+    position: absolute;
+    top: 64rem;
+    left: 20rem;
+    z-index: 2;
+
+    animation: bounceRight 5s ease-in-out infinite;
+  }
