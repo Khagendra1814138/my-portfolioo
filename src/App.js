@@ -6,8 +6,12 @@ import Home from './Pages/Home';
 import Projects from './Pages/Projects';
 import Experience from './Pages/Experience';
 
+import ProjectEndangeredSpecies from './Pages/Project/projectEndangeredSpecies';
+
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
+
+// import ProjectDisplay from './Pages/Project/ProjectDisplay'
 
 function App() {
   return (
@@ -17,6 +21,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/projects' element={<Projects/>} />
+          {/* <Route path= '/projects/:id' element={<ProjectDisplay/>} /> */}
+          <Route path='/projectEndangeredSpecies' element={<ProjectEndangeredSpecies/>} />
           <Route path='/experience' element={<Experience/>} />
         </Routes>
         <Footer/>

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
 .navbar {
   width: 100%;
   height: auto;
@@ -12,22 +14,23 @@
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
+  grid-gap: 20px;
   justify-content: center;
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;;
-  color: white;
+  align-items: center;
 }
-  
+
+
 .navbar a {
   color: white;
   text-decoration: none;
-  margin: 20px;
+  margin: 10px;
   font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
 }
-.navbar a:active{
-  color: aquamarine;
-}
+
 .navbar a:hover{
   color: aquamarine;
 }
@@ -66,15 +69,16 @@
 
 @media only screen and (min-width:600px) {
   .dash{
-      display: none;
+    display: none;
   }
 }
 
 
 @media only screen and (max-width: 900px) {
   .navbar a {
-    width: 70px;
+    width: 170px;
   }
+  
 }
 
 @media only screen and (max-width: 600px) {
@@ -104,7 +108,22 @@
   }
 }
 .dash{
-    height: 50px;
-    width: 50px;
-    background-color: blueviolet;
+    height: 55px;
+    width: 65px;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 50%;
+    background: teal;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+}
+.dash span{
+  height: 10px;
+  width: 40px;
+  display: flex;
+  margin: auto;
+  margin-top: 4px;
+  background: #181B24;
+  border-radius: 10px;
 }

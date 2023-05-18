@@ -1,0 +1,300 @@
+@import "../Styles/Home.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+:root{
+    --borderColour: teal;
+    --background: rgb(0, 99, 99);
+    --backgroundDarker: rgb(1, 78, 78);
+    --canvasBackground: #3A5361;
+    --borderSize: 0px;
+    
+}
+
+.projects{
+    height: auto;
+    width: auto;
+    padding-top: 4rem;
+}
+
+.canvasFrame{
+    height: auto;
+    width: auto;
+    margin: auto;
+    background-image: var(--backgroundPatternSVG);
+    background-attachment: fixed;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.column1{
+    height: auto;
+    width: auto;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.topStick{
+    height: 100px;
+    width: 50px;
+    margin: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: var(--backgroundDarker);
+    border-left: var(--borderSize) solid var(--borderColour);
+    border-right: var(--borderSize) solid var(--borderColour);
+    border-top: var(--borderSize) solid var(--borderColour);
+}
+
+.column2{
+    height: auto;
+    width: auto;
+    display: block;
+    margin: auto;
+    z-index: 3;
+}
+.topTopSupport{
+    height: 4rem;
+    max-width: 41.5%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(0, 109, 109);
+    border-left: var(--borderSize) solid var(--borderColour);
+    border-right: var(--borderSize) solid var(--borderColour);
+    border-top: var(--borderSize) solid var(--borderColour);
+
+    justify-content: center;
+    align-items: center;
+    font-size: 46px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+/* @media screen and (max-width: 600px) {
+    .topTopSupport{
+        max-width: 70%;
+    }
+} */
+
+.topSupport{
+    height: 30px;
+    max-width: 84%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: var(--background);
+    border: var(--borderSize) solid var(--borderColour);
+    display: flex;
+}
+.topSupport span{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    font-size: 100px;
+    font-weight: bold;
+    align-self: center;
+    justify-content: center;
+    color: var(--background);
+    background-color: var(--backgroundDarker);
+    margin: auto;
+    margin-top: -10px;
+    border: var(--borderSize) solid var(--borderColour);
+    border-radius: 10px;
+}
+
+.canvas{
+    height: auto;
+    max-width: 70%;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(--canvasBackground);
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    align-items: center;
+    grid-gap: 60px 60px;
+}
+
+.projectCardFrame{
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+.projectCard{
+    position: absolute;
+    background-color: #3A5361;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    box-shadow: 0px 4px 8px rgb(22, 22, 22);
+    transition: all 0.8s ease;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.projectCard image{
+    height: 210px;
+    width: 100%;
+    border-bottom: 4px solid #324753;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: -3rem;
+    background-size: cover;
+}
+.projectCard h2{
+    height: auto;
+    width: auto;
+    margin: auto;
+    
+    color: aquamarine;
+    font-size: 26px;
+    word-spacing: 8px;
+    padding: 6px;
+}
+
+.projectCardShadow{
+    position: absolute;
+    background-color: #324753;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease;
+    border-radius: 10px;
+}
+.projectCardFrame:hover .projectCard{
+    transform: translate(-1rem, -1rem);
+    cursor: pointer;
+}
+.projectCardFrame:hover .projectCardShadow{
+    transform: translate(1rem, 1rem);
+    cursor: pointer;
+}
+
+.projectsFrame{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: slategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.canvas span{
+    font-size: 200px;
+    filter: grayscale(50%);
+}
+
+.centerSupport{
+    height: 40px;
+    max-width: 94%;
+    background-color: var(--background);
+    margin: auto;
+    border: var(--borderSize) solid var(--borderColour);
+    border-radius: 10px;
+
+    display: flex;
+}
+
+.centerSupport span{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    font-size: 100px;
+    font-weight: bold;
+    align-self: center;
+    justify-content: center;
+    color: var(--background);
+    background-color: var(--backgroundDarker);
+    margin: auto;
+    margin-top: -14px;
+    border: var(--borderSize) solid var(--borderColour);
+    border-radius: 10px;
+}
+
+
+.leftStick{
+    height: 34rem;
+    width: 50px;
+    background-color: var(--backgroundDarker);
+    margin: auto;
+    margin-top: -18rem;
+    transform: rotate(20deg);
+    border-radius: 10px;
+    z-index: 2;
+
+    border: var(--borderSize) solid var(--borderColour);
+}
+
+.rightStick{
+    height: 34rem;
+    width: 50px;
+    background-color: var(--backgroundDarker);
+    margin: auto;
+    transform: rotate(-20deg);
+    border-radius: 10px;
+    margin-top: -18rem;
+    z-index: 2;
+
+    border: var(--borderSize) solid var(--borderColour);
+}
+
+.bottomCenterStick{
+    height: 12rem;
+    width: 50px;
+    background-color: var(--backgroundDarker);
+    margin: auto;
+    margin-top: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    border-left: var(--borderSize) solid var(--borderColour);
+    border-right: var(--borderSize) solid var(--borderColour);
+    border-bottom: var(--borderSize) solid var(--borderColour);
+}
+
+.bottomStick{
+    height: 30px;
+    width: 280px;
+    background-color: var(--backgroundDarker);
+    margin: auto;
+    margin-top: -40px;
+    margin-left: -94px;
+    border: var(--borderSize) solid var(--borderColour);
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.column3{
+    height: auto;
+    width: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+}
+
+.centerRow{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+
+    justify-items: center;
+    align-items: center;
+}

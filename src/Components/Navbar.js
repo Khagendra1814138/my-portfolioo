@@ -16,13 +16,17 @@ function Navbar () {
         <div className="navbar" id={expandNavbar ? "open" : "close"}>
             <div className="togglebutton">
                 <button onClick={() => {setExpandNavbar((prev) => !prev)}}>
-                    <div className="dash"></div>
+                    <div className="dash">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </button>
             </div>
 
             <div className="links">
                 <Link className="active" to='/'> Home </Link>
-                <Link className="active"to='experience'> Experience </Link>
+                <Link className="active" to='experience'> Experience/Journey </Link>
                 <Link className="active" to='projects'> Projects </Link>
             </div>
 
