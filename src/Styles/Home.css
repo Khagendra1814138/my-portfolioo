@@ -1,27 +1,67 @@
 @import "../Animations/Animations.css";
 
-:root{
-    --spaceInvader: #323955;
-    --backgroundPatternSVG: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%232F3544' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23323955'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
-    --SVGpatternTwo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%2320232F'/%3E%3Cstop offset='1' stop-color='%2310121B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='20' height='20' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%233F476A' cx='10' cy='10' r='10'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.13'/%3E%3C/svg%3E");
-    --SVG: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%2320232f' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23373f53' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23232736' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23343c4f' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23272c3e' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%2331384a' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%232b3045' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%232e3546' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%232e344d' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%232b3141' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23323955' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23282e3d' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
-}
+@import "./GlobalStyle.css";
+
 
 .home{
     overflow: hidden;
-    padding-top: 0rem;
-    padding-bottom: 20rem;
+    height: auto;
+    width: auto;
 }
-.avatarSection{
+
+.avatar-Section{
+    position: relative;
     height: auto;
     width: auto;
     display: flex;
     flex-direction: column;
+    padding-bottom: 10rem;
 }
+
+.about-Section{
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: auto;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    background: var(--backgroundColor2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-Section{
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: auto;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+}
+
+.contact-Section{
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: auto;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    background-color: var(--backgroundColor2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+
 .ring{
     height: 21rem;
     width: 21rem;
-  
+    
     border: 4px solid aquamarine;
     border-radius: 50%;
     margin: auto;
@@ -72,11 +112,12 @@
 .bioFrame {
     height: auto;
     width: auto;
-    position: relative;
     background-color: none;
     padding-bottom: 10rem;
     display: flex;
     flex-direction: column;
+
+    position: relative;
 }
 
 .bioFrame h1{
@@ -86,17 +127,19 @@
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
-    text-transform: none;
-    word-spacing: 8px;
+    border: none;
+    background: none;
+    padding: 0px;
 }
 .bioFrame h2{
     font-size: 40px;
     font-weight: bold;
+    margin: auto;
+    margin-top: 10px;
     opacity: 0;
     animation: slideBottom 0.5s ease forwards;
     animation-delay: .7s;
     text-transform: none;
-    word-spacing: 8px;
 }
 .bioFrame h2:nth-of-type(2){
     font-size: 30px;
@@ -108,116 +151,91 @@
     color: aquamarine;
 }
 
-.curveTwo{
-    position: absolute;
-    height: 10rem;
-    width: 100%;
-    bottom: 0;
-}
-.curveTwo::before{
-    content: " ";
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    background-color: #171D33;
-    width: 55%;
-    height: 100%;
-    transform: translate(85%, 60%);
-}
-.curveTwo::after{
-    content: " ";
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    background-color: #20232F;
-    width: 55%;
-    height: 100%;
-    transform: translate(-4%, 40%);
-    z-index: 1;
-}
 
 
-.about-frame{
+.introduction-Frame{
     height: auto;
-    width: auto;
-    padding-top: 10rem;
-    padding-bottom: 14rem;
-    background: #171D33;
+    min-width: 60%;
+    padding: 1rem;
     margin: auto;
-    font-size: 50px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-    position: relative;
-}
-.about-frame h1{
-    font-size: 60px;
-    font-weight: bold;
-}
-.curve{
-    position: absolute;
-    height: 14rem;
-    width: 100%;
-    bottom: 0;
-}
-.curve::before{
-    content: " ";
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    background-color: #20232F;
-    width: 55%;
-    height: 100%;
-    transform: translate(85%, 60%);
-}
-.curve::after{
-    content: " ";
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    background-color: #171D33;
-    width: 55%;
-    height: 100%;
-    transform: translate(-4%, 40%);
-    z-index: -1;
 }
 
-.about-frame p { 
+.introduction-Frame p{
     height: auto;
-    width: auto;
-    padding: 10px;
-    font-size: 16px;
-    opacity: 0;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: 1s;
-    background-color: none;
-    border-radius: 10% 40% 10% 30% / 40% 30% 60% 40%;
-    border: 5px solid teal;
+    max-width: 45rem;
+    margin: auto;
+    margin-top: 2rem;
+    font-size: 18px;
+    padding: 1rem;
+    display: inline-block;
+    text-align: start;
+    border: 4px solid #0D1324;
+    background-color: #0F172A;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.726);
+    word-spacing: -2px;
 }
-.about-frame h1 span{
+.introduction-Frame p span{
+    font-size: 20px;
+    font-weight: 600;
     color: aquamarine;
 }
-.grid{
-    height: auto;
-    width: auto;
-    background-color: none;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-}
 
-.grid p{
+.box {
+    width: 18rem;
     height: 18rem;
-    width: auto;
-    font-size: 20px;
-    padding: 20px;
+    padding: 1rem;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: morph 2s ease-in-out infinite both alternate;
+    border: 4px solid aquamarine;
 }
+
+.spin-container {
+    width: 20rem;
+    height: 20rem;
+    animation: spin 12s ease-in-out infinite alternate;
+    position: relative;
+}
+
+
+.shape {
+    width: 100%;
+    height: 100%;
+    transition: border-radius 1s ease-out;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    animation: morph 8s ease-in-out infinite both alternate;
+    position: absolute;
+    overflow: hidden;
+    z-index: 5;
+    border: 6px solid teal;
+}
+
+.image {
+    width: 142%;
+    height: 142%;
+    position: absolute;
+    left: -21%;
+    top: -21%;
+    background-image: url('../Images/Profile.jpg');
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    animation: spin 12s ease-in-out infinite alternate-reverse;
+    opacity: 1;
+    z-index: 2;
+}
+
+
+
+
 
 
 .about-image{
@@ -274,20 +292,10 @@
     height: auto;
     width: 100%;
     margin: auto;
-    margin-top: 0rem;
+    margin-top: 6rem;
     /* background-image: var(--SVGpatternTwo); */
 }
-.hobbies-Frame h1{
-    font-size: 50px;
-    text-transform: none;
-}
-.hobbies-Frame h2{
-    font-size: 50px;  
-    text-transform: none;
-}
-.hobbies-Frame span{
-    color: aquamarine;
-}
+
 .six-gride{
     height: auto;
     width: auto;
@@ -355,88 +363,10 @@
     filter: grayscale(50%);
 }
 
-.skills-Frame{
-    height: auto;
-    width: auto;
-    margin: auto;
-    margin-top: 10rem;
-    background-image: var(--backgroundPatternSVG);
-    background-attachment: fixed;
-}
-
-.skills-Frame h1{
-    font-size: 60px;
-    font-weight: bold;
-}
-.skills-Frame h1 span{
-    color: aquamarine;
-}
-.skills-Frame h2{
-    font-size: 50px;
-    font-weight: bold;
-    margin-top: 15rem;
-}
-.skills-Frame h2 span{
-    color: aquamarine;
-}
 
 
-
-.box {
-    width: 20rem;
-    height: 20rem;
-    padding: 1rem;
-    border-radius: 50%;
-    margin: auto;
-    border: 2px dashed rgba(255,255,255,0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: morph 2s ease-in-out infinite both alternate, 
-        bounceRight 4s ease-in-out infinite;
-    border: 4px solid aquamarine;
-}
-
-.spin-container {
-    width: 20rem;
-    height: 20rem;
-    animation: spin 12s ease-in-out infinite alternate;
-    position: relative;
-}
-
-
-.shape {
-    width: 100%;
-    height: 100%;
-    transition: border-radius 1s ease-out;
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    animation: morph 8s ease-in-out infinite both alternate;
-    position: absolute;
-    overflow: hidden;
-    z-index: 5;
-    border: 6px solid teal;
-}
-
-.bd {
-    width: 142%;
-    height: 142%;
-    position: absolute;
-    left: -21%;
-    top: -21%;
-    background-image: url('../Images/Profile.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    color: #003;
-    font-size: 5vw;
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-transform: uppercase;
-    animation: spin 12s ease-in-out infinite alternate-reverse;
-    opacity: 1;
-    z-index: 2;
+.skills-Section h2{
+    margin-top: 14rem;
 }
 
 .personalities-Frame{
@@ -500,144 +430,9 @@
     /* background-color: rebeccapurple; */
 }
 
-/*////////////////////////////////////////----FLOATING SHAPES----//////////////////////////////////////////////////////////////////////////////////*/
-.diamond-narrow {
-    width: 0;
-    height: 0;
-    border: 50px solid transparent;
-    border-bottom: 70px solid #323955;
-    position: absolute;
-    top: 15rem;
-    left: 20rem;
-    animation: floatImage 4s ease-in-out infinite;
-    
+
+
+.map-Frame{
+    border-radius: 10px;
+    border: 0px solid slategray;
 }
-.diamond-narrow:after {
-    content: '';
-    position: absolute;
-    left: -50px;
-    top: 70px;
-    width: 0;
-    height: 0;
-    border: 50px solid transparent;
-    border-top: 70px solid #323955;
-}
-
-  
-
-.diamond-shield {
-    width: 0;
-    height: 0;
-    border: 50px solid transparent;
-    border-bottom: 20px solid #323955;
-    position: absolute;
-    top: 35rem;
-    right: 15rem;
-    animation: bounceRight 4s ease-in-out infinite;
-}
-
-.diamond-shield:after {
-    content: '';
-    position: absolute;
-    left: -50px;
-    top: 20px;
-    width: 0;
-    height: 0;
-    border: 50px solid transparent;
-    border-top: 70px solid #323955;
-}
-
-.moon {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    box-shadow: 15px 15px 0 0 var(--spaceInvader);
-    position: absolute;
-    top: 15rem;
-    right: 15rem;
-    animation: zoomIn 4s ease-in-out infinite;
-}
-
-.circleFrame{
-    width: 10rem;
-    height: 10rem;
-    border:4px solid var(--spaceInvader);
-    position: absolute;
-    top: 88rem;; 
-    left: 10rem;
-    margin:auto;
-    border-radius:50%; 
-    animation: floatImage 5s ease-in-out infinite;
-}
-  
-.circle{
-    width: 50px;
-    height: 50px;
-    background: var(--spaceInvader);
-    border-radius:50%;
-    position:absolute;
-    top:0; bottom:0; left:0;right:0;
-    overflow:hidden;
-    margin:auto;
-    animation: circle 6s linear infinite;
-}
-
-@keyframes circle{
-    0%{
-        transform:rotate(0deg)
-                translate(-78px)
-                rotate(0deg);
-
-    }
-    100%{
-        transform:rotate(360deg)
-                translate(-78px)
-                rotate(-360deg);
-    }
-}
-
-  
-.space-invader {
-    box-shadow: 0 0 0 1em var(--spaceInvader),
-    0 1em 0 1em var(--spaceInvader),
-    -2.5em 1.5em 0 .5em var(--spaceInvader),
-    2.5em 1.5em 0 .5em var(--spaceInvader),
-    -3em -3em 0 0 var(--spaceInvader),
-    3em -3em 0 0 var(--spaceInvader),
-    -2em -2em 0 0 var(--spaceInvader),
-    2em -2em 0 0 var(--spaceInvader),
-    -3em -1em 0 0 var(--spaceInvader),
-    -2em -1em 0 0 var(--spaceInvader),
-    2em -1em 0 0 var(--spaceInvader),
-    3em -1em 0 0 var(--spaceInvader),
-    -4em 0 0 0 var(--spaceInvader),
-    -3em 0 0 0 var(--spaceInvader),
-    3em 0 0 0 var(--spaceInvader),
-    4em 0 0 0 var(--spaceInvader),
-    -5em 1em 0 0 var(--spaceInvader),
-    -4em 1em 0 0 var(--spaceInvader),
-    4em 1em 0 0 var(--spaceInvader),
-    5em 1em 0 0 var(--spaceInvader),
-    -5em 2em 0 0 var(--spaceInvader),
-    5em 2em 0 0 var(--spaceInvader),
-    -5em 3em 0 0 var(--spaceInvader),
-    -3em 3em 0 0 var(--spaceInvader),
-    3em 3em 0 0 var(--spaceInvader),
-    5em 3em 0 0 var(--spaceInvader),
-    -2em 4em 0 0 var(--spaceInvader),
-    -1em 4em 0 0 var(--spaceInvader),
-    1em 4em 0 0 var(--spaceInvader),
-    2em 4em 0 0 var(--spaceInvader);
-    background: var(--spaceInvader);
-    width: 1rem;
-    height: 1rem;
-    overflow: hidden;
-    margin: 50px 0 70px 65px;
-
-    position: absolute;
-    top: 64rem;
-    left: 20rem;
-    z-index: 2;
-
-    animation: bounceRight 5s ease-in-out infinite;
-  }

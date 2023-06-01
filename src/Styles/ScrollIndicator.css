@@ -1,17 +1,18 @@
 .progress-Frame{
     /* background-color: rgb(41, 58, 58); */
-    height: 10px;
+    height: 4px;
     width: 100%;
 
     position: sticky;
-    top: 1;
+    top: 10;
     left: 0;
     z-index: 1;
 }
 
 .progress-Bar{
-    height: 10px;
+    height: 6px;
     background-color: teal;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
+    margin-top: 4px;
 }

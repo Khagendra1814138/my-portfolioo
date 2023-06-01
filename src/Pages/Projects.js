@@ -1,7 +1,7 @@
 import React from "react";
 
 import "../Styles/Projects.css";
-import ProfileImage from "../Images/Profile.png";
+// import ProfileImage from "../Images/Profile.png";
 import EndangeredSpeciesCover from "../Images/projectsImage/endangeredSpecies.PNG"
 
 // import ProjectItem from "./Project/projectItem";
@@ -12,7 +12,7 @@ function Projects() {
     return (
         <div className="projects">
 
-            <h1>Portfolio <span>Projects</span></h1>
+            <h1><span>03.</span> PROTFOLIO PROJECTS</h1>
 
             <section className="canvasFrame">
                 <column className="column1">
@@ -45,7 +45,7 @@ function Projects() {
 
                         <Link exact to="../projectEndangeredSpecies"  className="projectCardFrame">
                             <div className="projectCard">
-                                <image style={{backgroundImage: `url(${ProfileImage})`}}></image>
+                                <image style={{backgroundImage: `url(${"ProfileImage"})`}}></image>
                                 <h2>Name 2</h2>
                             </div>
                             <div className="projectCardShadow"></div>
@@ -54,7 +54,7 @@ function Projects() {
 
                         <Link exact to="../projectEndangeredSpecies"  className="projectCardFrame">
                             <div className="projectCard">
-                                <image style={{backgroundImage: `url(${ProfileImage})`}}></image>
+                                <image style={{backgroundImage: `url(${"ProfileImage"})`}}></image>
                                 <h2>Name 2</h2>
                             </div>
                             <div className="projectCardShadow"></div>
@@ -63,7 +63,7 @@ function Projects() {
 
                         <Link exact to="../projectEndangeredSpecies"  className="projectCardFrame">
                             <div className="projectCard">
-                                <image style={{backgroundImage: `url(${ProfileImage})`}}></image>
+                                <image style={{backgroundImage: `url(${"ProfileImage"})`}}></image>
                                 <h2>Name 3</h2>
                             </div>
                             <div className="projectCardShadow"></div>
@@ -72,7 +72,15 @@ function Projects() {
 
                         <Link exact to="../projectEndangeredSpecies"  className="projectCardFrame">
                             <div className="projectCard">
-                                <image style={{backgroundImage: `url(${ProfileImage})`}}></image>
+                                <image style={{backgroundImage: `url(${"ProfileImage"})`}}></image>
+                                <h2>Name 4</h2>
+                            </div>
+                            <div className="projectCardShadow"></div>
+                        </Link>
+
+                        <Link exact to="../projectEndangeredSpecies"  className="projectCardFrame">
+                            <div className="projectCard">
+                                <image style={{backgroundImage: `url(${"ProfileImage"})`}}></image>
                                 <h2>Name 4</h2>
                             </div>
                             <div className="projectCardShadow"></div>

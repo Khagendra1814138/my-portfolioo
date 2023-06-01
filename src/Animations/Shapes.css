@@ -1,0 +1,435 @@
+@import "../Animations/Animations.css";
+
+.moon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 var(--spaceInvader);
+  position: absolute;
+  top: 15rem;
+  right: 15rem;
+  animation: zoomIn 4s ease-in-out infinite;
+}
+
+
+.pacmanZoom {
+  width: 0px;
+  height: 0px;
+  border-top: 40px solid var(--spaceInvader);
+  border-right: 40px solid transparent;
+  border-bottom: 40px solid var(--spaceInvader);
+  border-left: 40px solid var(--spaceInvader);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+
+  position: absolute;
+  top: 20rem;
+  left: 15rem;
+  animation: zoomIn 4s ease-in-out infinite;
+}
+
+
+
+
+
+
+/*////////////////////////////////////////----SPACEInvader SHAPES----//////////////////////////////////////////////////////////////////////////////////*/
+.space-invader {
+    box-shadow: 0 0 0 1em var(--spaceInvader),
+    0 1em 0 1em var(--spaceInvader),
+    -2.5em 1.5em 0 .5em var(--spaceInvader),
+    2.5em 1.5em 0 .5em var(--spaceInvader),
+    -3em -3em 0 0 var(--spaceInvader),
+    3em -3em 0 0 var(--spaceInvader),
+    -2em -2em 0 0 var(--spaceInvader),
+    2em -2em 0 0 var(--spaceInvader),
+    -3em -1em 0 0 var(--spaceInvader),
+    -2em -1em 0 0 var(--spaceInvader),
+    2em -1em 0 0 var(--spaceInvader),
+    3em -1em 0 0 var(--spaceInvader),
+    -4em 0 0 0 var(--spaceInvader),
+    -3em 0 0 0 var(--spaceInvader),
+    3em 0 0 0 var(--spaceInvader),
+    4em 0 0 0 var(--spaceInvader),
+    -5em 1em 0 0 var(--spaceInvader),
+    -4em 1em 0 0 var(--spaceInvader),
+    4em 1em 0 0 var(--spaceInvader),
+    5em 1em 0 0 var(--spaceInvader),
+    -5em 2em 0 0 var(--spaceInvader),
+    5em 2em 0 0 var(--spaceInvader),
+    -5em 3em 0 0 var(--spaceInvader),
+    -3em 3em 0 0 var(--spaceInvader),
+    3em 3em 0 0 var(--spaceInvader),
+    5em 3em 0 0 var(--spaceInvader),
+    -2em 4em 0 0 var(--spaceInvader),
+    -1em 4em 0 0 var(--spaceInvader),
+    1em 4em 0 0 var(--spaceInvader),
+    2em 4em 0 0 var(--spaceInvader);
+    background: var(--spaceInvader);
+    width: 1rem;
+    height: 1rem;
+    overflow: hidden;
+    margin: 50px 0 70px 65px;
+
+    position: absolute;
+    bottom: 0rem;
+    left: 20rem;
+    z-index: 2;
+
+    animation: bounceRight 5s ease-in-out infinite;
+}
+
+
+
+
+
+
+
+.circleFrame{
+    width: 10rem;
+    height: 10rem;
+    border:4px solid var(--spaceInvader);
+    position: absolute;
+    bottom: -10rem;; 
+    left: 10rem;
+    margin:auto;
+    border-radius:50%; 
+    animation: floatImage 5s ease-in-out infinite;
+    z-index: 1;
+}
+  
+.circle{
+    width: 50px;
+    height: 50px;
+    background: var(--spaceInvader);
+    border-radius:50%;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    overflow:hidden;
+    margin:auto;
+    animation: circle 6s linear infinite;
+}
+
+@keyframes circle{
+  0%{
+    transform:rotate(0deg)
+      translate(-78px)
+      rotate(0deg);
+
+  }
+  100%{
+    transform:rotate(360deg)
+      translate(-78px)
+      rotate(-360deg);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////////////////////////----DIAMOND SHAPES----//////////////////////////////////////////////////////////////////////////////////*/
+.diamond-narrow {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 70px solid #323955;
+    position: absolute;
+    top: 55rem;
+    right: 5rem;
+    animation: floatImage 4s ease-in-out infinite;
+    
+}
+.diamond-narrow:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 70px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 70px solid #323955;
+}
+
+  
+.diamond-shield {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 20px solid #323955;
+    position: absolute;
+    bottom: 10rem;
+    left: 5rem;
+    z-index: 2;
+    animation: bounceRight 4s ease-in-out infinite;
+}
+.diamond-shield:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 70px solid #323955;
+}
+
+
+.diamond {
+  border-style: solid;
+  border-color: transparent transparent #32557f transparent;
+  border-width: 0 25px 25px 25px;
+  height: 0;
+  width: 50px;
+  box-sizing: content-box;
+  position: absolute;
+  margin: 20px 0 50px 0;
+  animation: floatImage 4s ease-in-out infinite;
+  top: 20rem;
+  left: 5rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: #32557f transparent transparent transparent;
+    border-width: 70px 50px 0 50px;
+  }
+}
+
+
+.diamond1 {
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom-color: #32557f;
+  position: absolute;
+  top: 40rem;
+  right: 5rem;
+  animation: bounceRight 4s ease-in-out infinite;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top-color: #32557f;
+  }
+}
+
+
+
+
+
+
+
+
+.pentagon {
+  position: absolute;
+  width: 54px;
+  box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: #32557f transparent;
+  top: 70rem;
+  left: 5rem;
+  animation: bounceLeft 4s ease-in-out infinite;
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent #32557f;
+  }
+}
+
+
+.hexagon {
+  width: 100px;
+  height: 55px;
+  background: #32557f;
+  position: absolute;
+  top: 90rem;
+  right: 5rem;
+  animation: floatImage 4s ease-in-out infinite;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid #32557f;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid #32557f;
+  }
+}
+
+
+
+
+
+
+
+/*////////////////////////////////////////----PACMAN SHAPES----//////////////////////////////////////////////////////////////////////////////////*/
+.pacmanFrame{
+    height: auto;
+    width: auto;
+    position: absolute;
+    bottom: 0rem;
+    right: 5rem;
+}
+.pacman {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #323955;
+    position: relative;
+    margin-top: 20px;
+    animation: bounceRight 4s ease-in-out infinite;
+  }
+  
+  .pacman__eye {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 20px;
+    right: 40px;
+    background: #20232F;
+  }
+  
+  .pacman__mouth {
+    background: #171D33;
+    position: absolute;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+    animation-name: eat;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+  }
+  
+  .pacman__food {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    top: 40%;
+    left: 120px;
+    animation-name: food;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes eat {
+    0% {
+      clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+    }
+    25% {
+      clip-path: polygon(100% 60%, 44% 48%, 100% 40%);
+    }
+    50% {
+      clip-path: polygon(100% 50%, 44% 48%, 100% 50%);
+    }
+    75% {
+     clip-path: polygon(100% 59%, 44% 48%, 100% 35%);
+    }
+    100% {
+     clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+    }
+  }
+  
+  @keyframes food {
+    0% {
+      transform: translateX(0);
+       opacity: 1;
+    }
+    100% {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+  }
+/*////////////////////////////////////////----PACMAN SHAPES----//////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+  .moon{
+    display: none;
+  }
+
+  .pacmanZoom{
+    display: none;
+  }
+
+  .space-invader {
+    display: none;
+  }
+
+  .circleFrame{
+    display: none;
+  }
+
+  .diamond-narrow{
+    display: none;
+  }
+
+  .diamond-shield{
+    display: none;
+  }
+
+  .diamond{
+    display: none;
+  }
+
+  .diamond1{
+    display: none;
+  }
+
+  .pentagon{
+    display: none;
+  }
+
+  .hexagon{
+    display: none;
+  }
+}

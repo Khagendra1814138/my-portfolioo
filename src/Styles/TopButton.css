@@ -1,0 +1,51 @@
+@import "../Animations/Animations.css";
+
+
+.TopButton{
+    height: 60px;
+    width:  60px;
+
+    position: fixed;
+
+    background: teal;
+    border: 6px solid turquoise;
+    border-radius: 50%;
+
+    bottom: 2rem;
+    right: 1rem;
+
+    font-size: 60px;
+    font-weight: bold;
+    z-index: 999;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 10px;
+
+    transition: 0.5s ease;
+
+    animation: floatImage 5s ease-in-out infinite;
+}
+
+
+.TopButton:hover{
+    border: 6px solid white;
+}
+
+.arrowUp {
+    width: 20px;
+    height: 20px;
+    border: 6px solid white;
+    border-left: 0;
+    border-top: 0;
+    transform: rotate(225deg);
+    transition: 0.5s ease;
+  }
+
+
+  .TopButton:hover .arrowUp{
+    border: 6px solid turquoise;
+    border-left: 0;
+    border-top: 0;
+}

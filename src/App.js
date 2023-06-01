@@ -1,4 +1,3 @@
-import './App.css';
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
@@ -11,6 +10,8 @@ import ProjectEndangeredSpecies from './Pages/Project/projectEndangeredSpecies';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 
+import TopButton from './Components/TopButton';
+
 // import ProjectDisplay from './Pages/Project/ProjectDisplay'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar/>
+        <TopButton/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/projects' element={<Projects/>} />

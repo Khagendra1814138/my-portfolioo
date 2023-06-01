@@ -24,12 +24,14 @@ function Navbar () {
                 </button>
             </div>
 
-            <div className="links">
-                <Link className="active" to='/'> Home </Link>
-                <Link className="active" to='experience'> Experience/Journey </Link>
-                <Link className="active" to='projects'> Projects </Link>
+            <div className="linkContainer">
+                <div className="links">
+                    <div className="myInitials"> <span>&#123;&nbsp;</span> KLimbu<span>&nbsp;&#125;</span></div>
+                    <Link className="navlist" to='/'>&lt;<span>01. </span>Home /&gt;</Link>
+                    <Link className="navlist" to='experience'>&lt;<span>02. </span>Journey /&gt; </Link>
+                    <Link className="navlist" to='projects'>&lt;<span>03. </span>Projects /&gt; </Link>
+                </div>
             </div>
-
             <ScrollIndicator/>
         </div>
     );

@@ -1,0 +1,89 @@
+.curve-AvatarSection{
+    position: absolute;
+    height: 10rem;
+    width: 100%;
+    bottom: -10rem;
+}
+.curve-AvatarSection::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    background-color: #171D33;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+}
+.curve-AvatarSection::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    background-color: #20232F;
+    width: 55%;
+    height: 100%;
+    transform: translate(-4%, 40%);
+    z-index: 1;
+}
+
+
+
+.curve-SkillSection{
+    position: absolute;
+    height: 14rem;
+    width: 100%;
+    bottom: 0;
+}
+.curve-SkillSection::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    background-color: #20232F;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+}
+.curve-SkillSection::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    background-color: #171D33;
+    width: 55%;
+    height: 100%;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+}
+
+
+
+
+
+.curve-ContactSection{
+    position: absolute;
+    height: 10rem;
+    width: 100%;
+    bottom: 0rem;
+}
+.curve-ContactSection::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    background-color: #171D33;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+}
+.curve-ContactSection::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    background-color: #20232F;
+    width: 55%;
+    height: 100%;
+    transform: translate(-4%, 40%);
+    z-index: 1;
+}

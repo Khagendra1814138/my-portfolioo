@@ -1,22 +1,62 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+@import "./GlobalStyle.css";
 
 .navbar {
-  width: 100%;
+  width: auto;
   height: auto;
-  background: #181b24;
+  background: rgba(13, 25, 48, 0.411);
+  border-bottom: 2px solid #0F172A;
   display: block;
   position: sticky;
   top: 0;
   z-index: 999;
+
 }
-  
-.links {
-  width: 100%;
-  height: 100%;
+
+.linkContainer{
+  height: auto;
+  width: auto;
+  background-color: transparent;
   display: flex;
-  grid-gap: 20px;
+  justify-content: right;
+  align-items: center;
+  padding-right: 6rem;
+}
+
+.myInitials{
+  display: flex;
+  justify-content: flex-start;
+  padding: 8px;
+  font-size: 28px;
+  font-weight: bold;
+  color: turquoise;
+  position: absolute;
+  left: 40px;
+  top:  10px;
+  font-family: var(--font-mono);
+}
+.myInitials span{
+  color: white;
+}
+
+.myInitials:hover span{
+  color: turquoise;
+  transition: 0.5s ease;
+}
+
+.links {
+  width: auto;
+  height: auto;
+  display: flex;
+  gap: 20px;
   justify-content: center;
   align-items: center;
+}
+
+.navlist span{
+ color: aquamarine;
+ font-size: 15px;
+ font-weight: bold;
 }
 
 
@@ -24,11 +64,12 @@
   color: white;
   text-decoration: none;
   margin: 10px;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: sans-serif;
+  font-family: var(--font-mono);
 }
 
 .navbar a:hover{
@@ -40,26 +81,23 @@
   height: 100px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  background-color: aliceblue;
+  justify-content: center;
 }
 
 .toggleButton button {
-  margin-right: 20px;
-  background-color: transparent;
   border: none;
-  color: white;
   cursor: pointer;
 }
 
 #open {
-  height: 100vh;
+  height: 60rem;
 }
 
 #open .links {
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 100px;
+  margin-top: 4rem;
 }
 
 #open a {
@@ -67,35 +105,12 @@
   text-align: center;
 }
 
-@media only screen and (min-width:600px) {
+@media only screen and (min-width:750px) {
   .dash{
     display: none;
   }
-}
 
-
-@media only screen and (max-width: 900px) {
-  .navbar a {
-    width: 170px;
-  }
-  
-}
-
-@media only screen and (max-width: 600px) {
   .toggleButton {
-    display: flex;
-  }
-  #close a {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .toggleButton {
-    display: none;
-  }
-
-  .hiddenLinks {
     display: none;
   }
 
@@ -104,19 +119,39 @@
   }
 
   #open .links {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
+
+
+@media only screen and (max-width: 1000px) {
+  .myInitials{
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 750px) {
+  #close a {
+    display: none;
+  }
+
+  .linkContainer{
+    justify-content: center;
+    padding-right: 0px;
+  }
+}
+
 .dash{
-    height: 55px;
-    width: 65px;
-    margin: auto;
-    margin-top: 1rem;
-    border-radius: 50%;
-    background: teal;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 10px;
+  height: 55px;
+  width: 65px;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 50%;
+  background: teal;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
 }
 .dash span{
   height: 10px;

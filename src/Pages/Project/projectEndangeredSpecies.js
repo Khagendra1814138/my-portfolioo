@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
+
 import "./projectEndangeredSpecies.css";
+
 
 import EndangeredSpeciesCover from "../../Images/projectsImage/endangeredSpecies.PNG";
 import MernStackIcon from "../../Images/skillsIcons/mernStackIcon.png"
@@ -16,6 +19,7 @@ import PlayIcon from "../../Images/skillsIcons/playIcon.png";
 
 function ProjectEndangeredSpecies (){
 
+
     return (
         <div className="endangeredSpecies"> 
             <h1>Endangered Species</h1>
@@ -23,7 +27,7 @@ function ProjectEndangeredSpecies (){
             <image style={{backgroundImage: `url(${EndangeredSpeciesCover})`}} className="projectImage"></image>
             
             <div className="skillsFrame"> 
-                <h2>SKILLS</h2>
+                <h2> <span>01. </span>SKILLS</h2>
 
                 <div className="skills">
                     <span>HTML
@@ -51,8 +55,8 @@ function ProjectEndangeredSpecies (){
                     </span>
                 </div>
 
+
                 <div className="projectLinks">
-                  
                     <Link exact to="https://github.com/Khagendra1814138/endangered-species" target="_blank" className="frame">
                         <div className="card">
                             <image style={{backgroundImage: `url(${GithubIcon})`}}></image>
@@ -69,10 +73,22 @@ function ProjectEndangeredSpecies (){
 
             </div>
 
-            <h2>About this Project</h2>
+            <h2> <span>02. </span>About this Project</h2>
 
             <section className="aboutSecton">
-                Wssa
+
+                <div className="windowFrame"> This is the window/Curtin.
+                    <div className="windowDoorL"></div>
+                    <div className="windowDoorR"></div>
+                </div>
+
+                <div className="cameraLenseFrame"> Camera Open Lense.
+                    <div className="coverTL"></div>
+                    <div className="coverTR"></div>
+                    <div className="coverBL"></div>
+                    <div className="coverBR"></div>
+                </div>
+
             </section>
             
         </div>

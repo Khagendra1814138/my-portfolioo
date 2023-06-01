@@ -4,15 +4,20 @@
     --borderColour: teal;
     --background: rgb(0, 99, 99);
     --backgroundDarker: rgb(1, 78, 78);
-    --canvasBackground: #3A5361;
+    --canvasBackground: #3a53618f;
     --borderSize: 0px;
     
 }
 
 .projects{
+    overflow: hidden;
     height: auto;
     width: auto;
     padding-top: 4rem;
+}
+
+.projects h1 span{
+   color: aquamarine;
 }
 
 .canvasFrame{
@@ -68,10 +73,6 @@
 
     justify-content: center;
     align-items: center;
-    font-size: 46px;
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    color: whitesmoke;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
