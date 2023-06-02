@@ -17,7 +17,7 @@ import PhotopeaIcon from "../Images/skillsIcons/photopeaIcon.png";
 
 import {ContactMe} from "../Components/Contact";
 import {SideNav} from "../Components/sidenav";
-import BackgroundAnimation from "../Components/BackgroundCoolAnimation";
+// import BackgroundAnimation from "../Components/BackgroundCoolAnimation";
 
 import { AvatarSectionAnimations } from "../Animations/Shapes";
 import { AboutSectionAnimations } from "../Animations/Shapes";
