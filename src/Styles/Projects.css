@@ -24,8 +24,6 @@
     height: auto;
     width: auto;
     margin: auto;
-    background-image: var(--backgroundPatternSVG);
-    background-attachment: fixed;
     padding-top: 3rem;
     padding-bottom: 10rem;
     display: flex;

@@ -141,7 +141,7 @@
     width: 0;
     height: 0;
     border: 50px solid transparent;
-    border-bottom: 70px solid #323955;
+    border-bottom: 70px solid var(--spaceInvader);
     position: absolute;
     top: 55rem;
     right: 5rem;
@@ -156,7 +156,7 @@
     width: 0;
     height: 0;
     border: 50px solid transparent;
-    border-top: 70px solid #323955;
+    border-top: 70px solid var(--spaceInvader);
 }
 
   
@@ -164,7 +164,7 @@
     width: 0;
     height: 0;
     border: 50px solid transparent;
-    border-bottom: 20px solid #323955;
+    border-bottom: 20px solid var(--spaceInvader);
     position: absolute;
     bottom: 10rem;
     left: 5rem;
@@ -179,7 +179,7 @@
     width: 0;
     height: 0;
     border: 50px solid transparent;
-    border-top: 70px solid #323955;
+    border-top: 70px solid var(--spaceInvader);
 }
 
 
