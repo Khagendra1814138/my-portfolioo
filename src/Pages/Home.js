@@ -187,14 +187,14 @@ function Home() {
 
             <section className="contact-Section">
                 <h1><span>03.</span> CONTACT</h1>
-{/* 
+
                 <iframe className="map-Frame" title="felthamMap"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39787.35592632645!2d-0.4541092758145006!3d51.445124181006776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48767371edfe0ebb%3A0x94d7e225880115cc!2sFeltham%2C%20UK!5e0!3m2!1sen!2sus!4v1684670165731!5m2!1sen!2sus" 
                     width="600" height="450"
                     allowfullscreen="none" 
                     loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade">
-                </iframe>				    */}
+                </iframe>				   
             
                 <div>
                     <ContactMe/> 
