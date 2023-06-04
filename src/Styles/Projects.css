@@ -4,7 +4,7 @@
     --borderColour: teal;
     --background: rgb(0, 99, 99);
     --backgroundDarker: rgb(1, 78, 78);
-    --canvasBackground: #3a53618f;
+    --canvasBackground: #739c989a;
     --borderSize: 0px;
     
 }
@@ -64,7 +64,7 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(0, 109, 109);
+    background-color: rgb(0, 139, 139);
     border-left: var(--borderSize) solid var(--borderColour);
     border-right: var(--borderSize) solid var(--borderColour);
     border-top: var(--borderSize) solid var(--borderColour);
@@ -132,7 +132,7 @@
 }
 .projectCard{
     position: absolute;
-    background-color: #3A5361;
+    background-color: #739C98;
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -145,7 +145,7 @@
 .projectCard image{
     height: 210px;
     width: 100%;
-    border-bottom: 4px solid #324753;
+    border-bottom: 4px solid #84b8b3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,7 +167,7 @@
 
 .projectCardShadow{
     position: absolute;
-    background-color: #324753;
+    background-color: #578B86;
     width: 100%;
     height: 100%;
     transition: all 0.8s ease;
@@ -268,7 +268,7 @@
 .bottomStick{
     height: 30px;
     width: 280px;
-    background-color: var(--backgroundDarker);
+    background-color: #018B8B;
     margin: auto;
     margin-top: -40px;
     margin-left: -94px;

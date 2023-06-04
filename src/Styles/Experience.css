@@ -140,8 +140,8 @@
     padding: 1rem;
     font-size: 20px;
     font-weight: 600;
-    background-color: #323955;
-    color: turquoise;
+    background-color: #739c98;
+    color: aquamarine;
   }
   ul li .descr {
     padding: 1rem;
@@ -149,10 +149,10 @@
     font-weight: 400;
     word-spacing: -4px;
     text-align: start;
-    color: #19303a;
+    color: white;
     height: auto;
     width: auto;
-    background-color: slategray;
+    background-color: #87afab;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 

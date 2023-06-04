@@ -316,7 +316,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: #323955;
+    background: #B6EAFA;
     position: relative;
     margin-top: 20px;
     animation: bounceRight 4s ease-in-out infinite;
@@ -329,11 +329,11 @@
     border-radius: 50%;
     top: 20px;
     right: 40px;
-    background: #20232F;
+    background: #8BABA8;
   }
   
   .pacman__mouth {
-    background: #171D33;
+    background: #8BABA8;
     position: absolute;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;

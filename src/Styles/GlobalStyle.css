@@ -24,6 +24,13 @@
     --LightCurve-color: #AFCED0;
     --LightCurve-color2: #8BABA8;
     --LightCurve-color1: #9DC5C0;
+
+
+    --LightParagraphBorder: #BDD8D5;
+    --LightParagraphBackground: #9DC5C0;
+
+    --DarkParagraphBorder: #0D1324;
+    --DarkParagraphBackground: #0F172A;
 }
 
 body {

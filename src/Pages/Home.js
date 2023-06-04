@@ -143,15 +143,18 @@ function Home() {
                         <image style={{backgroundImage: `url(${MiroIcon})`}}></image>
                     </div>
 
-                  
+                    <div className="hobbies-frame">Postman Pat
+                        <image style={{backgroundImage: `url(${MiroIcon})`}}></image>
+                    </div>
+
                 </div>
 
                 <h2>Get to <span>know</span> more about me 👋</h2>
 
                 <div className="personalities-Frame">
+
                     <div className="personalities-Row">
                         <div className="hobbies-frame">Teamwork <span>🤝</span></div>
-                        <div className="hobbies-frame">Quick Learner <span>🚀</span></div>
                         <div className="hobbies-frame">Communication <span>🗣️</span></div>
                     </div>
 
@@ -178,6 +181,11 @@ function Home() {
                         <div className="hobbies-frame">Problem Solving <span>🧩</span></div>
                         <div className="hobbies-frame">Keen to Learn <span>✍️</span></div>
                     </div>
+                    
+                    <div className="personalities-Row">
+                        <div className="hobbies-frame">Quick Learner <span>🚀</span></div>
+                    </div>
+
                 </div>
 
                 <SkillSectionAnimations/>
