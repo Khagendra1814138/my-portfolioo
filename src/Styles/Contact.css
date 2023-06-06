@@ -1,10 +1,14 @@
 .contactForm-Frame{
     height:  auto;
-    min-width: 530px;
+    min-width: 500px;
     padding: 2rem;
     
-    border: 4px solid #0D1324;
-    background-color: #0F172A;
+    /* border: 4px solid #0D1324;
+    background-color: #0F172A; */
+
+    border: 4px solid #98EECC;
+    background-color: #526967;
+    
 
     border-radius: 10px;
     margin: auto;
@@ -35,7 +39,8 @@
     margin: auto;
     height: 40px;
     width: 80%;
-    background-color: #122B39;
+    /* background-color: #122B39; */
+    background-color: #9DC5C0;
     border: none;
     color: #51CBBB;
     padding: 10px;
@@ -47,7 +52,8 @@
     margin: auto;
     height: 112px;
     width: 80%;
-    background-color: #122B39;
+    /* background-color: #122B39; */
+    background-color: #9DC5C0;
     border: none;
     color: #51CBBB;
     padding: 10px;

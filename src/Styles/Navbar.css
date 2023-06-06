@@ -140,6 +140,10 @@
     justify-content: center;
     padding-right: 0px;
   }
+
+  .navbar {
+    background: rgb(13, 25, 48);
+  }
 }
 
 .dash{

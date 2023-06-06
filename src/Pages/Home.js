@@ -14,6 +14,7 @@ import TrelloIcon from "../Images/skillsIcons/trelloIcon.png";
 import MiroIcon from "../Images/skillsIcons/miroIcon.png";
 import FigmaIcon from "../Images/skillsIcons/figmaIcon.png";
 import PhotopeaIcon from "../Images/skillsIcons/photopeaIcon.png";
+import Postman from "../Images/skillsIcons/postman.svg";
 
 import {ContactMe} from "../Components/Contact";
 import {SideNav} from "../Components/sidenav";
@@ -144,7 +145,7 @@ function Home() {
                     </div>
 
                     <div className="hobbies-frame">Postman Pat
-                        <image style={{backgroundImage: `url(${MiroIcon})`}}></image>
+                        <image style={{backgroundImage: `url(${Postman})`}}></image>
                     </div>
 
                 </div>

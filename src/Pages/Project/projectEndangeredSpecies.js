@@ -13,12 +13,23 @@ import CssIcon from "../../Images/skillsIcons/cssIcon.png";
 import JsIcon from "../../Images/skillsIcons/jsIcon.png";
 import MiroIcon from "../../Images/skillsIcons/miroIcon.png";
 import PhotopeaIcon from "../../Images/skillsIcons/photopeaIcon.png";
+import Postman from "../../Images/skillsIcons/postman.svg";
 
 import GithubIcon from "../../Images/skillsIcons/githubIcon.png";
 import PlayIcon from "../../Images/skillsIcons/playIcon.png";
 
 function ProjectEndangeredSpecies (){
 
+   
+    // let classes = ["expander", "expanded"]
+   
+    
+    // const handelClick = () =>{
+    //     classes = ["expander", "expanded"].join(" ");
+
+    //     return classes;
+    // }
+        
 
     return (
         <div className="endangeredSpecies"> 
@@ -27,7 +38,7 @@ function ProjectEndangeredSpecies (){
             <image style={{backgroundImage: `url(${EndangeredSpeciesCover})`}} className="projectImage"></image>
             
             <div className="skillsFrame"> 
-                <h2> <span>01. </span>SKILLS</h2>
+                <h2> <span>01. </span>TOOLS USED</h2>
 
                 <div className="skills">
                     <span>HTML
@@ -52,6 +63,10 @@ function ProjectEndangeredSpecies (){
 
                     <span>Photopea
                         <image style={{backgroundImage: `url(${PhotopeaIcon})`}}></image>
+                    </span>
+
+                    <span>Postman
+                        <image style={{backgroundImage: `url(${Postman})`}}></image>
                     </span>
                 </div>
 
@@ -90,6 +105,8 @@ function ProjectEndangeredSpecies (){
                 </div>
 
             </section>
+
+            <h2> <span>03. </span>Project Features</h2>
             
         </div>
     );

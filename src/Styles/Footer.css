@@ -1,6 +1,68 @@
+@import "../Animations/Animations.css";
+
 .footer{
     height: 20rem;
     width: auto;
-    background-color: #181B24;
+    /* background-color: #181B24; */
+    background-color: #354b49;
     padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMediaFrame{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .instagram{
+        height: 50px;
+        width: 50px;
+        background-color: turquoise;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        animation: bounceLeft 4s ease-in-out infinite;
+        transition: 0.5s ease;
+    }
+
+    .instagram:hover{
+       background-color: white;
+    }
+
+    .linkedIn{
+        height: 50px;
+        width: 50px;
+        background-color: turquoise;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        animation: floatImagetwo 4s ease-in-out infinite;
+        transition: 1s ease;
+    }
+    .linkedIn:hover{
+        background-color: white;
+    }
+
+    .gitHub{
+        height: 50px;
+        width: 50px;
+        background-color: turquoise;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        animation: bounceRight 4s ease-in-out infinite;
+        transition: 1s ease;
+    }
+    .gitHub:hover{
+        background-color: white;
+    }
 }
