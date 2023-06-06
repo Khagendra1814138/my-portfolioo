@@ -190,7 +190,7 @@
   height: 0;
   width: 50px;
   box-sizing: content-box;
-  position: absolute;
+  position: relative;
   margin: 20px 0 50px 0;
   animation: floatImage 4s ease-in-out infinite;
   top: 20rem;
