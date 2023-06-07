@@ -124,7 +124,7 @@
 .frame:hover .card{
     transform: rotate(0deg);
     cursor: pointer;
-    background-color: #4f758b;
+    background-color: #8BABA8;
 }
 
 .frame .card image{
@@ -141,13 +141,87 @@
 
 .aboutSecton{
     height: auto;
-    width: auto;
+    max-width: 70%;
+    margin: auto;
     padding: 2rem;
-    border: 1px solid rosybrown;
     display: flex;
     gap: 1rem;
     flex-direction: column;
 }
+.aboutSecton p{
+    font-size: 20px;
+    padding: 10px;
+    word-spacing: 2px;
+    text-align: left;
+    background-color: rgb(157,197,192);
+    border: 4px solid #BDD8D5;
+    box-shadow: 0px 4px 8px rgb(144, 165, 150);
+    border-radius: 10px;
+}
+
+.projectFeaturesSection{
+    height: auto;
+    max-width: 70%;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.featureFrame{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.featureImage{
+    min-height: 300px;
+    min-width: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    background-position: -7rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 8px rgb(91, 105, 95);
+    background-color: #1e2e36;
+    background-blend-mode: lighten;
+}
+
+.featureParagraphFrame {
+    height: 260px;
+    width: 460px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #9DC5C0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+.featureParagraphFrame h3 {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.featureParagraphFrame p {
+    width: 90%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 .windowFrame{
@@ -163,6 +237,7 @@
     box-shadow: 0px 4px 8px rgb(22, 22, 22);
     transition: all 0.8s ease;
     cursor: pointer;
+    overflow: hidden;
 
     .windowDoorL{
         height: 300px;
@@ -193,17 +268,11 @@
 }
 
 
-.windowFrame:hover{
-    border-radius: 0px;
-}
-
 .windowFrame:hover .windowDoorL{
     transform: translate(-150px, 0rem);
-    box-shadow: 0px 4px 8px rgb(22, 22, 22);
 }
 .windowFrame:hover .windowDoorR{
     transform: translate(150px, 0rem);
-    box-shadow: 0px 4px 8px rgb(22, 22, 22);
 }
 
 
@@ -222,6 +291,7 @@
     box-shadow: 0px 4px 8px rgb(22, 22, 22);
     transition: all 0.8s ease;
     cursor: pointer;
+    overflow: hidden;
 
     .coverTL{
         height: 150px;
@@ -269,21 +339,17 @@
 
 .cameraLenseFrame:hover .coverTL{
     transform: translate(0px, -150px);
-    box-shadow: 0px 4px 8px rgb(22, 22, 22);
 }
 
 .cameraLenseFrame:hover .coverTR{
     transform: translate(150px, 0px);
-    box-shadow: 0px 4px 8px rgb(22, 22, 22);
 }
 
 .cameraLenseFrame:hover .coverBL{
     transform: translate(-150px, 0px);
-    box-shadow: 0px 4px 8px rgb(22, 22, 22);
 }
 
 .cameraLenseFrame:hover .coverBR{
     transform: translate(0px, 150px);
-    box-shadow: 0px 4px 8px rgb(22, 22, 22);
 }
 
