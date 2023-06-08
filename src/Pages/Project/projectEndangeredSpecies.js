@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
-
 import "./projectEndangeredSpecies.css";
 
+import { useInView } from 'react-intersection-observer';
 
 import EndangeredSpeciesCover from "../../Images/projectsImage/endangeredSpecies.PNG";
 import MernStackIcon from "../../Images/skillsIcons/mernStackIcon.png"
@@ -38,18 +37,42 @@ function ProjectEndangeredSpecies (){
 
     //     return classes;
     // }
-        
+
+    const { ref: headerImgRef, inView: headerImgIsVisible} = useInView({
+        threshold: 0.5,
+        rootMargin: "50px",
+    });
+
+    const { ref: skillsRef, inView: skillsIsVisible} = useInView({
+        threshold: 0.5,
+        rootMargin: "50px",
+    });
+
+    const { ref: linksRef, inView: linksIsVisible} = useInView({
+        threshold: 0.5,
+        rootMargin: "50px",
+    });
+
+    const { ref: aboutRef, inView: aboutIsVisible} = useInView({
+        threshold: 0.5,
+        rootMargin: "50px",
+    });
 
     return (
         <div className="endangeredSpecies"> 
             <h1>Endangered Species</h1>
 
-            <image style={{backgroundImage: `url(${EndangeredSpeciesCover})`}} className="projectImage"></image>
+            <image style={{backgroundImage: `url(${EndangeredSpeciesCover})`}} 
+           
+                ref={headerImgRef} className={`${'projectImage'} ${headerImgIsVisible ? "showAnimateEndangeredSpecies" : ' '}`}
+                >
+
+            </image>
             
             <div className="skillsFrame"> 
                 <h2> <span>01. </span>TOOLS USED</h2>
 
-                <div className="skills">
+                <div ref={skillsRef} className={`${'skills'} ${skillsIsVisible ? "showAnimateEndangeredSpecies" : ' '}`}>
                     <span>HTML
                         <image style={{backgroundImage: `url(${HtmlIcon})`}}></image>
                     </span>
@@ -80,7 +103,7 @@ function ProjectEndangeredSpecies (){
                 </div>
 
 
-                <div className="projectLinks">
+                <div ref={linksRef} className={`${'projectLinks'} ${linksIsVisible ? "showAnimateEndangeredSpecies" : ' '}`}>
                     <Link exact to="https://github.com/Khagendra1814138/endangered-species" target="_blank" className="frame">
                         <div className="card">
                             <image style={{backgroundImage: `url(${GithubIcon})`}}></image>
@@ -99,7 +122,8 @@ function ProjectEndangeredSpecies (){
 
             <h2> <span>02. </span>About this Project</h2>
 
-            <section className="aboutSecton">
+
+            <section ref={aboutRef} className={`${'aboutSecton'} ${aboutIsVisible ? "showAnimateEndangeredSpecies" : ' '}`}>
                 <p>
                     This is my final year dissertion project.
                     During my research, I have found out that there were lack of awareness about the endangered species around world.
@@ -113,14 +137,16 @@ function ProjectEndangeredSpecies (){
 
             <h2> <span>03. </span>Project Features</h2>
 
-            <section className="projectFeaturesSection">
-     
+            <section  className='projectFeaturesSection'>
                 <div className="featureFrame">
+
                     <image className="featureImage" style={{backgroundImage: `url(${FontSizeIncreaserImg})`}}></image>
                     <div className="featureParagraphFrame">
                         <h3>Font size increaser</h3>
                         <p>Allows users with weak vision to increase the size of the texts inside the paragraphs.</p>
                     </div>
+
+                    <line></line>
 
                     <div className="featureParagraphFrame">
                         <h3>Text to voice</h3>
@@ -128,7 +154,7 @@ function ProjectEndangeredSpecies (){
                     </div>
                     <image className="featureImage" style={{backgroundImage: `url(${TextToVoicImg})`}}></image>
 
-
+                    <line></line>
 
                     <image className="featureImage" style={{backgroundImage: `url(${ReadingMaskImg})`}}></image>
                     <div className="featureParagraphFrame">
@@ -136,24 +162,31 @@ function ProjectEndangeredSpecies (){
                         <p>Allows the users to specifically focus on certian part of the paragraph, making it easy to focus and read.</p>
                     </div>
 
+                    <line></line>
+
                     <div className="featureParagraphFrame">
                         <h3>Reading Guide</h3>
                         <p>Allows the users to keep track and follow along the lines of text, just like your thumb following a line of text.</p>
                     </div>
                     <image className="featureImage" style={{backgroundImage: `url(${ReadingGuideImg})`}}></image>
 
+                    <line></line>
+                    
                     <image className="featureImage" style={{backgroundImage: `url(${DrkLgtModeImg})`}}></image>
                     <div className="featureParagraphFrame">
                         <h3>Dark/light Mode</h3>
                         <p>Allows the users to change the color theme of the whole web application to dark/light.</p>
                     </div>
 
+                    <line></line>
+                    
                     <div className="featureParagraphFrame">
                         <h3>Large Curser</h3>
                         <p>Allows users with weak vision to change the normal mouse curser to large curser, making it easy to keep track of the curser.</p>
                     </div>
                     <image className="featureImage" style={{backgroundImage: `url(${LargeCurserImg})`}}></image>
 
+                    <line></line>
 
                     <image className="featureImage" style={{backgroundImage: `url(${QuizImg})`}}></image>
                     <div className="featureParagraphFrame">

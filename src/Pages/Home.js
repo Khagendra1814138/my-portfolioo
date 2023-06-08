@@ -1,6 +1,9 @@
 import React from "react";
 import '../Styles/Home.css';
 import '../Styles/Curves.css';
+import '../Animations/Shapes.css';
+
+import { useInView } from 'react-intersection-observer';
 
 import Profile from '../Images/Profile.png';
 
@@ -26,6 +29,32 @@ import { SkillSectionAnimations } from "../Animations/Shapes";
 import { ContactSectionAnimations } from "../Animations/Shapes";
 
 function Home() {
+
+    const { ref: aboutRef, inView: aboutSectionIsVisible} = useInView({
+        threshold: 0.5,
+        rootMargin: "50px",
+    });
+
+    const { ref: hobbiesRef, inView: hobbiesSectionIsVisible} = useInView({
+        threshold: 0.5,
+        rootMargin: "50px",
+    });
+
+    const { ref: skillsRef, inView: skillsSectionIsVisible} = useInView({
+        threshold: 0.5,
+        rootMargin: "50px",
+    });
+
+    const { ref: interpersonalRef, inView: interpersonalSectionIsVisible} = useInView({
+        threshold: 0.5,
+        rootMargin: "50px",
+    });
+
+    const { ref: contactRef, inView: contactIsVisible} = useInView({
+        threshold: 0.5,
+        rootMargin: "50px",
+    });
+
     return(
         <div className="home">
             <SideNav/>
@@ -49,12 +78,12 @@ function Home() {
                 <AvatarSectionAnimations/>
             </section>
            
-
+            
              
             <section className="about-Section">
                 <h1><span>01. </span>ABOUT ME</h1>
 
-                <section className="introduction-Frame">
+                <section ref={aboutRef} className={`${'introduction-Frame'} ${aboutSectionIsVisible ? "moveUp" : "introduction-Frame"}`}>
                     
                     <div class="box">
                         <div class="spin-container">
@@ -78,20 +107,16 @@ function Home() {
                         My skills are far from the best, but, I am willing to learn to further develop my skills.
                     </p>
                 </section>
+                
+                <h2><span>01.1 </span>My Hobbies</h2>
 
-
-                <section className="hobbies-Frame">
-                    <h2><span>01.1 </span>My Hobbies</h2>
-
-                    <div className="six-gride">
-                        <div className="hobbies-frame">Riding Bike <span>🚴</span></div>
-                        <div className="hobbies-frame">Playing Football <span>⚽</span></div>
-                        <div className="hobbies-frame">Playing video games <span>🎮</span></div>
-                        <div className="hobbies-frame">Front-End & UI/UX Design <span>🖥️</span></div>
-                        <div className="hobbies-frame">Calisthenics Workout <span>💪</span></div>
-                        <div className="hobbies-frame">Running <span>🏃</span></div>
-                        <div className="hobbies-frame">Listening to Music <span>🎧</span></div>
-                    </div>
+                <section ref={hobbiesRef} className={`${'hobbies-Frame'} ${hobbiesSectionIsVisible ? "moveUp" : ' '}`}>      
+                    <div className="hobbies">Riding Bike <span>🚴</span></div>
+                    <div className="hobbies">Playing Football <span>⚽</span></div>
+                    <div className="hobbies">Playing video games <span>🎮</span></div>
+                    <div className="hobbies">Front-End & UI/UX Design <span>🖥️</span></div>
+                    <div className="hobbies">Calisthenics Workout <span>💪</span></div>
+                    <div className="hobbies">Running <span>🏃</span></div>
                 </section>
 
                 {/* <BackgroundAnimation/> */}
@@ -103,66 +128,64 @@ function Home() {
             <section className="skills-Section">
                 <h1><span>02. </span>SKILLS</h1>
 
-                <div className="six-gride">
-                    <div className="hobbies-frame">HTML
+                <div ref={skillsRef} className={`${'six-gride'} ${skillsSectionIsVisible ? "moveUp" : ' '}`}>
+                    <div className="hobbies">HTML
                         <image style={{backgroundImage: `url(${HtmlIcon})`}}></image>
                     </div>
 
-                    <div className="hobbies-frame">CSS
+                    <div className="hobbies">CSS
                         <image style={{backgroundImage: `url(${CssIcon})`}}></image>
                     </div>
 
-                    <div className="hobbies-frame">JavaScript
+                    <div className="hobbies">JavaScript
                         <image style={{backgroundImage: `url(${JsIcon})`}}></image>
                     </div>
 
-                    <div className="hobbies-frame">React
+                    <div className="hobbies">React
                         <image style={{backgroundImage: `url(${ReactIcon})`}}></image>
                     </div>
 
-                    <div className="hobbies-frame">Photopea
+                    <div className="hobbies">Photopea
                         <image style={{backgroundImage: `url(${PhotopeaIcon})`}}></image>
                     </div>
                         
-                    <div className="hobbies-frame">Figma
+                    <div className="hobbies">Figma
                         <image style={{backgroundImage: `url(${FigmaIcon})`}}></image>
                     </div>
 
-                    <div className="hobbies-frame">Git
+                    <div className="hobbies">Git
                         <image style={{backgroundImage: `url(${GitIcon})`}}></image>
                     </div>
 
-                    <div className="hobbies-frame">GitHub
+                    <div className="hobbies">GitHub
                         <image style={{backgroundImage: `url(${GithubIcon})`}}></image>
                     </div>
 
-                    <div className="hobbies-frame">Trello Board
+                    <div className="hobbies">Trello Board
                         <image style={{backgroundImage: `url(${TrelloIcon})`}}></image>
                     </div>
 
-                    <div className="hobbies-frame">Miro Board
+                    <div className="hobbies">Miro Board
                         <image style={{backgroundImage: `url(${MiroIcon})`}}></image>
                     </div>
 
-                    <div className="hobbies-frame">Postman Pat
+                    <div className="hobbies">Postman Pat
                         <image style={{backgroundImage: `url(${Postman})`}}></image>
                     </div>
-
                 </div>
 
                 <h2>Get to <span>know</span> more about me 👋</h2>
 
-                <div className="personalities-Frame">
-
+                <div ref={interpersonalRef} className={`${'personalities-Frame'} ${interpersonalSectionIsVisible ? "moveUp" : ' '}`}>
                     <div className="personalities-Row">
-                        <div className="hobbies-frame">Teamwork <span>🤝</span></div>
-                        <div className="hobbies-frame">Communication <span>🗣️</span></div>
+                        <div className="hobbies">Teamwork <span>🤝</span></div>
+                        <div className="hobbies">Communication <span>🗣️</span></div>
                     </div>
 
                     <div className="personalities-MiddleRow">
                         <div className="row">
-                            <div className="hobbies-frame">Leadership <span>👨‍🏫</span></div>
-                            <div className="hobbies-frame">Time Management <span>⏳</span></div>
+                            <div className="hobbies">Leadership <span>👨‍🏫</span></div>
+                            <div className="hobbies">Time Management <span>⏳</span></div>
                         </div>
 
                         <div className="row-middle">
@@ -173,20 +196,19 @@ function Home() {
                         </div>
 
                         <div className="row">
-                            <div className="hobbies-frame">Work Under Pressure <span>😄</span></div>
-                            <div className="hobbies-frame">Multitasking <span>🤹</span></div>
+                            <div className="hobbies">Work Under Pressure <span>😄</span></div>
+                            <div className="hobbies">Multitasking <span>🤹</span></div>
                         </div>
                     </div>
 
                     <div className="personalities-Row">
-                        <div className="hobbies-frame">Problem Solving <span>🧩</span></div>
-                        <div className="hobbies-frame">Keen to Learn <span>✍️</span></div>
+                        <div className="hobbies">Problem Solving <span>🧩</span></div>
+                        <div className="hobbies">Keen to Learn <span>✍️</span></div>
                     </div>
                     
                     <div className="personalities-Row">
-                        <div className="hobbies-frame">Quick Learner <span>🚀</span></div>
+                        <div className="hobbies">Quick Learner <span>🚀</span></div>
                     </div>
-
                 </div>
 
                 <SkillSectionAnimations/>
@@ -194,19 +216,21 @@ function Home() {
             </section>
                 
 
-            <section className="contact-Section">
+            <section ref={contactRef} className="contact-Section">
                 <h1><span>03.</span> CONTACT</h1>
 
-                <iframe className="map-Frame" title="felthamMap"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39787.35592632645!2d-0.4541092758145006!3d51.445124181006776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48767371edfe0ebb%3A0x94d7e225880115cc!2sFeltham%2C%20UK!5e0!3m2!1sen!2sus!4v1684670165731!5m2!1sen!2sus" 
-                    width="600" height="450"
-                    allowfullscreen="none" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>				   
-            
-                <div>
-                    <ContactMe/> 
+                <div className={`${'contactFrame'} ${contactIsVisible ? "moveUp" : ' '}`}>
+                    <iframe className="map-Frame" title="felthamMap"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39787.35592632645!2d-0.4541092758145006!3d51.445124181006776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48767371edfe0ebb%3A0x94d7e225880115cc!2sFeltham%2C%20UK!5e0!3m2!1sen!2sus!4v1684670165731!5m2!1sen!2sus" 
+                        width="572" height="450"
+                        allowfullscreen="none" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>				   
+                    <div>
+                        <ContactMe/> 
+                    </div>
+                    
                 </div>
 
                 <ContactSectionAnimations/>

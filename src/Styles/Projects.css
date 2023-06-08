@@ -38,7 +38,12 @@
     display: flex;
     overflow: hidden;
     position: relative;
+
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: 2s ease;
 }
+
 .topStick{
     height: 100px;
     width: 50px;
@@ -57,6 +62,10 @@
     display: block;
     margin: auto;
     z-index: 3;
+
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 2s ease;
 }
 .topTopSupport{
     height: 4rem;
@@ -123,6 +132,10 @@
     justify-content: space-evenly;
     align-items: center;
     grid-gap: 60px 60px;
+
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 2s ease;
 }
 
 .projectCardFrame{
@@ -286,6 +299,10 @@
     flex-direction: row;
 
     position: relative;
+
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s ease;
 }
 
 .centerRow{
@@ -297,3 +314,12 @@
     justify-items: center;
     align-items: center;
 }
+
+
+.showAnimate{
+    opacity: 1;
+    transform: translateY(0);
+    transform: translateX(0px);
+}
+
+  

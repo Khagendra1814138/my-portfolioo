@@ -4,6 +4,7 @@ import "../Styles/Experience.css"
 
 import { ExperienceAnimations } from "../Animations/Shapes";
 
+
 function Experience() {
     return (
         <div className="experience">
@@ -76,7 +77,7 @@ function Experience() {
                             <br></br>
                             <br></br>
                             While working on my projects, I graduelly developed my technical skills such as HTML, CSS, Javascript, React etc.
-                            For my year 2 group and my final year project, I decided to develop web application, which helped me to develop my skills further.
+                            For my year 2 group and my final year project, I decided to develop web application, which helped me to further develop my skills.
                             <br></br>
                             <br></br>
                             University studies also helped me to develop my interpersonal skills such as teamwork, time management, leadership etc.
