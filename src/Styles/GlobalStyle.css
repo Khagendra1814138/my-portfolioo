@@ -34,19 +34,20 @@
 }
 
 body {
+    margin: 0;
     margin: auto;
-    padding: 0px;
-    max-width: 1908px;
+    padding: 0;
     height: auto;
+    max-width: 1908px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: var(--font-mono);
     background-color: #9DC5C0;
     background-image: var(--lightBackgroundPatternSVG);
     background-attachment: fixed;
     text-align: center;
     color: white;
-    cursor: default;
   }
 
 button {
@@ -54,9 +55,6 @@ button {
     border: 0px;
     padding: 0px;
     background-color: transparent;
-  }
-  button:hover {
-    cursor: pointer;
   }
   
   /* CUSTOME SCROOL BAR */

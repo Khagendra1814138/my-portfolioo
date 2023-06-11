@@ -26,6 +26,7 @@ import LargeCurserImg from "../../Images/projectsImage/largeCurser.PNG";
 import QuizImg from "../../Images/projectsImage/quizFeature.PNG";
 
 
+
 function ProjectEndangeredSpecies (){
 
    
@@ -196,18 +197,6 @@ function ProjectEndangeredSpecies (){
                 
                 </div>
             </section>
-
-            <div className="windowFrame"> This is the window/Curtin.
-                    <div className="windowDoorL"></div>
-                    <div className="windowDoorR"></div>
-                </div>
-
-            <div className="cameraLenseFrame"> Camera Open Lense.
-                <div className="coverTL"></div>
-                <div className="coverTR"></div>
-                <div className="coverBL"></div>
-                <div className="coverBR"></div>
-            </div>
         </div>
     );
 }

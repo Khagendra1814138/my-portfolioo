@@ -1,4 +1,4 @@
-import React from "react";
+// import React, { useRef } from "react";
 import '../Styles/Home.css';
 import '../Styles/Curves.css';
 import '../Animations/Shapes.css';
@@ -29,6 +29,14 @@ import { SkillSectionAnimations } from "../Animations/Shapes";
 import { ContactSectionAnimations } from "../Animations/Shapes";
 
 function Home() {
+    // const hireMe = useRef(null);
+
+    // const scrollToSection = (elementRef) => {
+    //     window.scrollTo({
+    //       top: elementRef.current.offsetTop,  
+    //       behavour: "smooth",
+    //     })
+    // }
 
     const { ref: aboutRef, inView: aboutSectionIsVisible} = useInView({
         threshold: 0.5,
@@ -59,6 +67,8 @@ function Home() {
         <div className="home">
             <SideNav/>
 
+            {/* <button className="contactMeBtn" onClick={() => scrollToSection(hireMe)}>Hire Me</button> */}
+
             <section className="avatar-Section">
                 <div className="ring">
                     <div className="avatarFrame">
@@ -85,23 +95,45 @@ function Home() {
 
                 <section ref={aboutRef} className={`${'introduction-Frame'} ${aboutSectionIsVisible ? "moveUp" : "introduction-Frame"}`}>
                     
-                    <div class="box">
+                    {/* <div class="box">
                         <div class="spin-container">
                             <div class="shape">
                                 <div class="image"></div>
                             </div>
                         </div>
+                    </div> */}
+
+                    <div className='aboutImage'>
+                        <div>
+                        .<d>about</d>:hover&#123;
+                            <br></br>
+                            &nbsp; <span>Name: </span> Khagendra Limbu;
+                            <br></br>
+                            &nbsp; <span>Age: </span>23;
+                            <br></br>
+                            &nbsp; <span>University: </span> Brunel, London;
+                            <br></br>
+                            &nbsp; <span>Location: </span> London, Feltham;
+                            <br></br>
+                            &nbsp; <span>Country: </span> Nepal/Uk;
+                            <br></br>
+                            &nbsp; <span>Language: </span> English, Nepali, Hindi;
+                            <br></br>
+                            &#125;
+                        </div>
+                        <image style={{backgroundImage: `url(${Profile})`}}></image>
                     </div>
 
                     <p>
-                        I am a recent graduate and a starter/junior front-end developer. 
+                        Recent graduate with 1st class honour in computer sicence at Brunel Univerisity London. 
+                        I am a starter/junior front-end developer and UI/UX Designer. 
                         During my college studies, I was introduced to web Development, which immediately sparked my interest in Front-End development.
                         While studying computer science at university, I realized that Front-End and UI/UX design was the path I wanted to pursue.
                         <br></br>
                         <br></br>
                         <br></br>
                         My goals are to develop applications that prioritize 
-                        <span> functionality</span> and provide <span> engaging user experience</span> and <span> beautiful user interfaces</span>.
+                        <span> functionality, easy to use </span> and provide <span> engaging user experience</span> and <span> beautiful user interfaces</span>.
                         Currently, I have been working on my individual Front-End projects, and I have been exploring different tools and technologies to learn the basics of Front-End development.
                         My journey is just starting, and I have a long road ahead. 
                         My skills are far from the best, but, I am willing to learn to further develop my skills.
@@ -189,10 +221,18 @@ function Home() {
                         </div>
 
                         <div className="row-middle">
-                            <div className="about-image">
+                            {/* <div className="about-image">
                                 <image style={{backgroundImage: `url(${Profile})`}}></image>
                                 <div className="circle-spin"></div>
+                            </div> */}
+
+                            <div class="box">
+                                <div class="spin-container">
+                                    <div class="shape">
+                                    <div class="image"></div>
+                                </div>
                             </div>
+                    </div>
                         </div>
 
                         <div className="row">
@@ -217,8 +257,8 @@ function Home() {
                 
 
             <section ref={contactRef} className="contact-Section">
-                <h1><span>03.</span> CONTACT</h1>
-
+                <h1 ><span>03.</span> CONTACT</h1>
+                {/* ref={hireMe} */}
                 <div className={`${'contactFrame'} ${contactIsVisible ? "moveUp" : ' '}`}>
                     <iframe className="map-Frame" title="felthamMap"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39787.35592632645!2d-0.4541092758145006!3d51.445124181006776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48767371edfe0ebb%3A0x94d7e225880115cc!2sFeltham%2C%20UK!5e0!3m2!1sen!2sus!4v1684670165731!5m2!1sen!2sus" 
