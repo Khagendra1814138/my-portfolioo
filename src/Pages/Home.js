@@ -229,7 +229,7 @@ function Home() {
                             <div class="box">
                                 <div class="spin-container">
                                     <div class="shape">
-                                    <div class="image"></div>
+                                    <div class="image" style={{backgroundImage: `url(${Profile})`}}></div>
                                 </div>
                             </div>
                     </div>
