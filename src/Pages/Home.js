@@ -28,6 +28,12 @@ import { AboutSectionAnimations } from "../Animations/Shapes";
 import { SkillSectionAnimations } from "../Animations/Shapes";
 import { ContactSectionAnimations } from "../Animations/Shapes";
 
+import { Link } from "react-router-dom";
+
+import {AiFillInstagram} from 'react-icons/ai';
+import {AiFillLinkedin} from 'react-icons/ai';
+import {AiFillGithub} from 'react-icons/ai';
+
 function Home() {
     // const hireMe = useRef(null);
 
@@ -80,9 +86,13 @@ function Home() {
                     <h2> <span>🙏</span> Namaste, It's me</h2>
                     <h1>Khagendra Limbu</h1>
                     <h2>And I'm a <span>Front-End Developer</span> and <span>UI/UX Designer</span></h2>
+                    <div className='soicalConncectionFrame'>
+                        <Link className="socialMedia" exact to="https://www.instagram.com/khagendra.limbu.790/" target="blank"><AiFillInstagram size="4rem" color="#008080"/></Link>
+                        <Link className="socialMedia" exact to="https://www.linkedin.com/in/khagendra-limbu-213520242/" target="blank"><AiFillLinkedin size="4rem" color="#008080"/></Link>
+                        <Link className="socialMedia" exact to="https://github.com/Khagendra1814138" target="blank"><AiFillGithub size="3.9rem" color="#008080"/></Link>
+                    </div>
 
                     <div className="curve-AvatarSection"></div>
-                    
                 </section>
 
                 <AvatarSectionAnimations/>

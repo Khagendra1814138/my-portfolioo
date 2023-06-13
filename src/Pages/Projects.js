@@ -4,7 +4,7 @@ import "../Styles/Projects.css";
 import '../Animations/Shapes.css';
 
 // import ProfileImage from "../Images/Profile.png";
-import EndangeredSpeciesCover from "../Images/projectsImage/endangeredSpecies.PNG"
+import EndangeredSpeciesCover from "../Images/projectsImage/endAnimal.jpg"
 
 // import ProjectItem from "./Project/projectItem";
 // import {ProjectList} from "../Pages/Project/ProjectList"
@@ -69,10 +69,10 @@ function Projects() {
                         </Link>
 
 
-                        <Link exact to="../projectEndangeredSpecies"  className="projectCardFrame">
+                        <Link exact to="https://klimbu-e-commerce.netlify.app/" target="blank" className="projectCardFrame">
                             <div className="projectCard">
                                 <image style={{backgroundImage: `url(${"ProfileImage"})`}}></image>
-                                <h2>Name 2</h2>
+                                <h2>E-Commerce</h2>
                             </div>
                             <div className="projectCardShadow"></div>
                         </Link>

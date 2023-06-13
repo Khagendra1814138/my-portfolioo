@@ -28,7 +28,7 @@ export const SideNav = () => {
         window.scrollTo({top: 2600, behavior: 'smooth'});
     };
     const contact = () =>{
-        window.scrollTo({top: 5000, behavior: 'smooth'});
+        window.scrollTo({top: 5200, behavior: 'smooth'});
     };
 
   return (

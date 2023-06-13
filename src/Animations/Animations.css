@@ -53,13 +53,13 @@
 
 @keyframes zoomIn {
     0%{
-        transform: scale(0.2);
+        transform: scale(0.4);
     }
     50%{
         transform: scale(1);
     }
     100%{
-        transform: scale(0.2);
+        transform: scale(0.4);
     }
 }
 

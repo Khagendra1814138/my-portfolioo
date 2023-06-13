@@ -10,7 +10,7 @@ function Footer() {
     return(
         <div className="footer">
             <div className="socialMediaFrame">
-                <Link className="instagram" exact to="https://www.instagram.com/" target="blank"><AiFillInstagram size="auto" color="#008080"/></Link>
+                <Link className="instagram" exact to="https://www.instagram.com/khagendra.limbu.790/" target="blank"><AiFillInstagram size="auto" color="#008080"/></Link>
                 <Link className="linkedIn" exact to="https://www.linkedin.com/in/khagendra-limbu-213520242/" target="blank"><AiFillLinkedin size="auto" color="#008080"/></Link>
                 <Link className="gitHub" exact to="https://github.com/Khagendra1814138" target="blank"><AiFillGithub size="auto" color="#008080"/></Link>
             </div>
