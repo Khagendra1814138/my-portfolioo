@@ -5,7 +5,9 @@ import '../Animations/Shapes.css';
 
 import { useInView } from 'react-intersection-observer';
 
-import Profile from '../Images/Profile.png';
+import Profile2 from '../Images/Profile2.png';
+import Profile3 from '../Images/Profile3.png';
+import Profile4 from '../Images/Profile4.png';
 
 import ReactIcon from "../Images/skillsIcons/reactIcon.png";
 import HtmlIcon from "../Images/skillsIcons/htmlIcon.png";
@@ -78,7 +80,7 @@ function Home() {
             <section className="avatar-Section">
                 <div className="ring">
                     <div className="avatarFrame">
-                        <image className="profile" style={{backgroundImage: `url(${Profile})`}}> </image>
+                        <image className="profile" style={{backgroundImage: `url(${Profile3})`}}> </image>
                     </div>
                 </div>
                 
@@ -131,7 +133,7 @@ function Home() {
                             <br></br>
                             &#125;
                         </div>
-                        <image style={{backgroundImage: `url(${Profile})`}}></image>
+                        <image style={{backgroundImage: `url(${Profile2})`}}></image>
                     </div>
 
                     <p>
@@ -239,7 +241,7 @@ function Home() {
                             <div class="box">
                                 <div class="spin-container">
                                     <div class="shape">
-                                    <div class="image" style={{backgroundImage: `url(${Profile})`}}></div>
+                                    <div class="image" style={{backgroundImage: `url(${Profile4})`}}></div>
                                 </div>
                             </div>
                     </div>
