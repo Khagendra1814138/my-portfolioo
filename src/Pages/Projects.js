@@ -70,10 +70,10 @@ function Projects() {
                         </Link>
 
 
-                        <Link exact to="https://klimbu-e-commerce.netlify.app/" target="blank" className="projectCardFrame">
+                        <Link exact to="/projectEcommerce" className="projectCardFrame">
                             <div className="projectCard">
                                 <image style={{backgroundImage: `url(${Ecommerce})`}}></image>
-                                <h2>E-Commerce</h2>
+                                <h2>Creps Check</h2>
                             </div>
                             <div className="projectCardShadow"></div>
                         </Link>

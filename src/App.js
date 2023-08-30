@@ -6,6 +6,7 @@ import Projects from './Pages/Projects';
 import Experience from './Pages/Experience';
 
 import ProjectEndangeredSpecies from './Pages/Project/projectEndangeredSpecies';
+import ProjectEcommerce from './Pages/Project/projectEcommerce';
 
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
@@ -22,10 +23,12 @@ function App() {
         <TopButton/>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/experience' element={<Experience/>} />
           <Route path='/projects' element={<Projects/>} />
           {/* <Route path= '/projects/:id' element={<ProjectDisplay/>} /> */}
+        
           <Route path='/projectEndangeredSpecies' element={<ProjectEndangeredSpecies/>} />
-          <Route path='/experience' element={<Experience/>} />
+          <Route path='/projectEcommerce' element={<ProjectEcommerce/>} />
         </Routes>
         <Footer/>
       </Router>

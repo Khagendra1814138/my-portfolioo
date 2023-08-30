@@ -1,43 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./projectEndangeredSpecies.css";
+import "./projectEcommerce.css";
 
 import { useInView } from 'react-intersection-observer';
 
-import EndangeredSpeciesCover from "../../Images/projectsImage/endangeredSpecies.PNG";
-import MernStackIcon from "../../Images/skillsIcons/mernStackIcon.png"
+import Back from "../../Images/dalmatian-spots.svg";
+
+import EcommerceCover from "../../Images/projectsImage/Ecommerce.PNG";
+import ReactIcon from "../../Images/skillsIcons/reactIcon.png"
 import HtmlIcon from "../../Images/skillsIcons/htmlIcon.png";
 import CssIcon from "../../Images/skillsIcons/cssIcon.png";
 import JsIcon from "../../Images/skillsIcons/jsIcon.png";
 import MiroIcon from "../../Images/skillsIcons/miroIcon.png";
 import PhotopeaIcon from "../../Images/skillsIcons/photopeaIcon.png";
-import Postman from "../../Images/skillsIcons/postman.svg";
 
 import GithubIcon from "../../Images/skillsIcons/githubIcon.png";
 import PlayIcon from "../../Images/skillsIcons/playIcon.png";
 
 import FontSizeIncreaserImg from "../../Images/projectsImage/fontSizeIncreaser.PNG";
-import TextToVoicImg from "../../Images/projectsImage/textToVoice.PNG";
-import ReadingGuideImg from "../../Images/projectsImage/readingGuide.PNG";
-import ReadingMaskImg from "../../Images/projectsImage/readingMask.PNG";
-import DrkLgtModeImg from "../../Images/projectsImage/darkmode.PNG";
-import LargeCurserImg from "../../Images/projectsImage/largeCurser.PNG";
-import QuizImg from "../../Images/projectsImage/quizFeature.PNG";
 
-
-
-function ProjectEndangeredSpecies (){
-
-   
-    // let classes = ["expander", "expanded"]
-   
-    
-    // const handelClick = () =>{
-    //     classes = ["expander", "expanded"].join(" ");
-
-    //     return classes;
-    // }
+function ProjectEcommerce (){
 
     const { ref: headerImgRef, inView: headerImgIsVisible} = useInView({
         threshold: 0.5,
@@ -60,10 +43,10 @@ function ProjectEndangeredSpecies (){
     });
 
     return (
-        <div className="endangeredSpecies"> 
-            <h1>Endangered Species</h1>
+        <div className="ecommercePage" style={{backgroundImage: `url(${Back})`}} > 
+            <h1>Creps Check E-Commerce</h1>
 
-            <image style={{backgroundImage: `url(${EndangeredSpeciesCover})`}} 
+            <image style={{backgroundImage: `url(${EcommerceCover})`}} 
            
                 ref={headerImgRef} className={`${'projectImage'} ${headerImgIsVisible ? "showAnimateEndangeredSpecies" : ' '}`}
                 >
@@ -86,8 +69,8 @@ function ProjectEndangeredSpecies (){
                         <image style={{backgroundImage: `url(${JsIcon})`}}></image>
                     </span>
 
-                    <span>MERN
-                        <image style={{backgroundImage: `url(${MernStackIcon})`}}></image>
+                    <span>React
+                        <image style={{backgroundImage: `url(${ReactIcon})`}}></image>
                     </span>
 
                     <span>Miro Board
@@ -97,22 +80,18 @@ function ProjectEndangeredSpecies (){
                     <span>Photopea
                         <image style={{backgroundImage: `url(${PhotopeaIcon})`}}></image>
                     </span>
-
-                    <span>Postman
-                        <image style={{backgroundImage: `url(${Postman})`}}></image>
-                    </span>
                 </div>
 
 
                 <div ref={linksRef} className={`${'projectLinks'} ${linksIsVisible ? "showAnimateEndangeredSpecies" : ' '}`}>
-                    <Link exact to="https://github.com/Khagendra1814138/endangered-species" target="_blank" className="frame">
+                    <Link exact to="https://github.com/Khagendra1814138/e-commerce" target="_blank" className="frame">
                         <div className="card">
                             <image style={{backgroundImage: `url(${GithubIcon})`}}></image>
                         </div>
                     </Link>
 
                   
-                    <Link exact to="https://www.google.co.uk/" target="_blank" className="frame">
+                    <Link exact to="https://klimbu-e-commerce.netlify.app/" target="_blank" className="frame">
                         <div className="card">
                             <image style={{backgroundImage: `url(${PlayIcon})`}}></image>
                         </div>
@@ -148,57 +127,11 @@ function ProjectEndangeredSpecies (){
                     </div>
 
                     <line></line>
-
-                    <div className="featureParagraphFrame">
-                        <h3>Text to voice</h3>
-                        <p>Allows users who finds reading difficult to convert the paragraphs texts into a voice.</p>
-                    </div>
-                    <image className="featureImage" style={{backgroundImage: `url(${TextToVoicImg})`}}></image>
-
-                    <line></line>
-
-                    <image className="featureImage" style={{backgroundImage: `url(${ReadingMaskImg})`}}></image>
-                    <div className="featureParagraphFrame">
-                        <h3>Reading Mask</h3>
-                        <p>Allows the users to specifically focus on certian part of the paragraph, making it easy to focus and read.</p>
-                    </div>
-
-                    <line></line>
-
-                    <div className="featureParagraphFrame">
-                        <h3>Reading Guide</h3>
-                        <p>Allows the users to keep track and follow along the lines of text, just like your thumb following a line of text.</p>
-                    </div>
-                    <image className="featureImage" style={{backgroundImage: `url(${ReadingGuideImg})`}}></image>
-
-                    <line></line>
-                    
-                    <image className="featureImage" style={{backgroundImage: `url(${DrkLgtModeImg})`}}></image>
-                    <div className="featureParagraphFrame">
-                        <h3>Dark/light Mode</h3>
-                        <p>Allows the users to change the color theme of the whole web application to dark/light.</p>
-                    </div>
-
-                    <line></line>
-                    
-                    <div className="featureParagraphFrame">
-                        <h3>Large Curser</h3>
-                        <p>Allows users with weak vision to change the normal mouse curser to large curser, making it easy to keep track of the curser.</p>
-                    </div>
-                    <image className="featureImage" style={{backgroundImage: `url(${LargeCurserImg})`}}></image>
-
-                    <line></line>
-
-                    <image className="featureImage" style={{backgroundImage: `url(${QuizImg})`}}></image>
-                    <div className="featureParagraphFrame">
-                        <h3>Quiz</h3>
-                        <p>Allows the users to take quiz and check their knowledge on endangered species, based on the informations provided by the web application.</p>
-                    </div>
-                
+            
                 </div>
             </section>
         </div>
     );
 }
 
-export default ProjectEndangeredSpecies;
+export default ProjectEcommerce;

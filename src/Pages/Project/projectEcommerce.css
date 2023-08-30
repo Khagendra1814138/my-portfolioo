@@ -1,0 +1,11 @@
+
+.ecommercePage{
+    background-attachment: fixed;
+    background-position: center;
+    
+    margin: auto;
+    margin-top: 0px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    overflow: hidden;
+}
