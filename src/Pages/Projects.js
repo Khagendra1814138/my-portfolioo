@@ -5,7 +5,8 @@ import '../Animations/Shapes.css';
 
 // import ProfileImage from "../Images/Profile.png";
 import EndangeredSpeciesCover from "../Images/projectsImage/endAnimal.jpg";
-import Ecommerce from "../Images/projectsImage/ecommerce.jpg"
+import Ecommerce from "../Images/projectsImage/ecommerce.jpg";
+import KelangCover from "../Images/projectsImage/kelangCover.jpg";
 
 // import ProjectItem from "./Project/projectItem";
 // import {ProjectList} from "../Pages/Project/ProjectList"
@@ -63,7 +64,9 @@ function Projects() {
 
                         <Link exact to="../projectEndangeredSpecies"  className="projectCardFrame">
                             <div className="projectCard">
-                                <image style={{backgroundImage: `url(${EndangeredSpeciesCover})`}}></image>
+                                <image style={{backgroundImage: `url(${EndangeredSpeciesCover})`}}>
+                                    <div className="vignette"></div>
+                                </image>
                                 <h2>Endangered Species</h2>
                             </div>
                             <div className="projectCardShadow"></div>
@@ -72,17 +75,21 @@ function Projects() {
 
                         <Link exact to="/projectEcommerce" className="projectCardFrame">
                             <div className="projectCard">
-                                <image style={{backgroundImage: `url(${Ecommerce})`}}></image>
+                                <image style={{backgroundImage: `url(${Ecommerce})`}}>
+                    
+                                </image>
                                 <h2>Creps Check</h2>
                             </div>
                             <div className="projectCardShadow"></div>
                         </Link>
 
 
-                        <Link exact to="../projectEndangeredSpecies"  className="projectCardFrame">
+                        <Link exact to="https://ke-lang.netlify.app/" target="blank"  className="projectCardFrame">
                             <div className="projectCard">
-                                <image style={{backgroundImage: `url(${"ProfileImage"})`}}></image>
-                                <h2>Name 2</h2>
+                                <image style={{backgroundImage: `url(${KelangCover})`}}>
+                                    <div className="vignette"></div>
+                                </image>
+                                <h2>Ke-Lang</h2>
                             </div>
                             <div className="projectCardShadow"></div>
                         </Link>
@@ -90,7 +97,9 @@ function Projects() {
 
                         <Link exact to="../projectEndangeredSpecies"  className="projectCardFrame">
                             <div className="projectCard">
-                                <image style={{backgroundImage: `url(${"ProfileImage"})`}}></image>
+                                <image style={{backgroundImage: `url(${"ProfileImage"})`}}>
+
+                                </image>
                                 <h2>Name 3</h2>
                             </div>
                             <div className="projectCardShadow"></div>
@@ -99,7 +108,9 @@ function Projects() {
 
                         <Link exact to="../projectEndangeredSpecies"  className="projectCardFrame">
                             <div className="projectCard">
-                                <image style={{backgroundImage: `url(${"ProfileImage"})`}}></image>
+                                <image style={{backgroundImage: `url(${"ProfileImage"})`}}>
+
+                                </image>
                                 <h2>Name 4</h2>
                             </div>
                             <div className="projectCardShadow"></div>
@@ -107,7 +118,9 @@ function Projects() {
 
                         <Link exact to="../projectEndangeredSpecies"  className="projectCardFrame">
                             <div className="projectCard">
-                                <image style={{backgroundImage: `url(${"ProfileImage"})`}}></image>
+                                <image style={{backgroundImage: `url(${"ProfileImage"})`}}>
+                                    
+                                </image>
                                 <h2>Name 4</h2>
                             </div>
                             <div className="projectCardShadow"></div>
