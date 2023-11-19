@@ -84,7 +84,7 @@ function Projects() {
                         </Link>
 
 
-                        <Link exact to="https://ke-lang.netlify.app/" target="blank"  className="projectCardFrame">
+                        <Link exact to="/projectKelang" className="projectCardFrame">
                             <div className="projectCard">
                                 <image style={{backgroundImage: `url(${KelangCover})`}}>
                                     <div className="vignette"></div>

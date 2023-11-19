@@ -1,0 +1,11 @@
+
+.KelangPage{
+    background-attachment: fixed;
+    background-position: center;
+    width: 99.4vw;
+    
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    overflow: hidden;
+}
