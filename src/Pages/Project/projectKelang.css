@@ -9,3 +9,31 @@
     padding-bottom: 4rem;
     overflow: hidden;
 }
+
+.projectDesignSection{
+    height: auto;
+    max-width: 70%;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    background-color: #9DC5C0;
+    border-radius: 10px;
+}
+
+.projectDesignFrame{
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.projectDesignFrame .projectDesignImages{
+    height: 400px;
+    width: 40%;
+    display: flex;
+    border-radius: 2rem;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
