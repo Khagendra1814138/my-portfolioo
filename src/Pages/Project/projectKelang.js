@@ -58,7 +58,7 @@ function ProjectKelang (){
             </image>
             
             <div className="skillsFrame"> 
-                <h2> <span>01. </span>TOOLS USED</h2>
+                <h2> <span>01. </span>Tools Used</h2>
 
                 <div ref={skillsRef} className={`${'skills'} ${skillsIsVisible ? "showAnimateEndangeredSpecies" : ' '}`}>
                     <span>HTML
@@ -104,10 +104,9 @@ function ProjectKelang (){
 
             </div>
 
-            <h2> <span>02. </span>About this Project</h2>
-
 
             <section ref={aboutRef} className={`${'aboutSecton'} ${aboutIsVisible ? "showAnimateEndangeredSpecies" : ' '}`}>
+                <h2> <span>02. </span>About this Project</h2>
                 <p>
                    This is an educational web application about a dance from an indigenous tribes of Eastern Nepal called the "Limbu" community.
                    I wanted to create this project because this is about my own limbu culture dance. 
@@ -116,8 +115,9 @@ function ProjectKelang (){
                 </p>
             </section>
 
-            <h2> <span>03. </span>Project Designs/Layout</h2>
+
             <section  className='projectDesignSection'>
+                <h2> <span>03. </span>Project Designs/Layout</h2>
                 <div className="projectDesignFrame">
                     <images className="projectDesignImages" style={{backgroundImage: `url(${KelangFigmaDesign1})`}}></images>
                     <images className="projectDesignImages" style={{backgroundImage: `url(${KelangFigmaDesign2})`}}></images>
@@ -125,19 +125,21 @@ function ProjectKelang (){
                     
                 <div className="projectDesignFrame">
                     <images className="projectDesignImages" style={{backgroundImage: `url(${KelangFigmaDesign3})`}}></images>
-                    <images className="projectDesignImages">
+                    <div className="projectDesignParagraph">
                         <Link exact to="https://www.figma.com/file/veXIbF7HltJTiDdWPJAswo/Kelang-UI-layout-design?type=design&node-id=0%3A1&mode=design&t=u3jxkpTlzRFrq3zJ-1" target="_blank" className="frame">
-                            <div className="card">
+                            <button className="card">
                                 <image style={{backgroundImage: `url(${PlayIcon})`}}></image>
-                            </div>
+                            </button>
                         </Link>
-                    </images>
+                        <line></line>
+                        <p>This website was designed using Figma. Click the button above to view the design of this project.</p>
+                    </div>
                    
                 </div>
             </section>
 
-            <h2> <span>04. </span>Project Features</h2>
             <section  className='projectFeaturesSection'>
+                <h2> <span>04. </span>Project Features</h2>
                 <div className="featureFrame">
 
                     <image className="featureImage" style={{backgroundImage: `url(${parallax})`}}></image>

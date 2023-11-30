@@ -25,6 +25,9 @@ import DrkLgtModeImg from "../../Images/projectsImage/darkmode.PNG";
 import LargeCurserImg from "../../Images/projectsImage/largeCurser.PNG";
 import QuizImg from "../../Images/projectsImage/quizFeature.PNG";
 
+import endangeredSpeciesDesign1 from "../../Images/projectsImage/endangeredSpeciesDesign1.PNG";
+import endangeredSpeciesDesign2 from "../../Images/projectsImage/endangeredSpeciesDesign2.PNG";
+import endangeredSpeciesDesign3 from "../../Images/projectsImage/endangeredSpeciesDesign3.PNG";
 
 
 function ProjectEndangeredSpecies (){
@@ -71,7 +74,7 @@ function ProjectEndangeredSpecies (){
             </image>
             
             <div className="skillsFrame"> 
-                <h2> <span>01. </span>TOOLS USED</h2>
+                <h2> <span>01. </span>Tools Used</h2>
 
                 <div ref={skillsRef} className={`${'skills'} ${skillsIsVisible ? "showAnimateEndangeredSpecies" : ' '}`}>
                     <span>HTML
@@ -121,10 +124,10 @@ function ProjectEndangeredSpecies (){
 
             </div>
 
-            <h2> <span>02. </span>About this Project</h2>
 
 
             <section ref={aboutRef} className={`${'aboutSecton'} ${aboutIsVisible ? "showAnimateEndangeredSpecies" : ' '}`}>
+                <h2> <span>02. </span>About this Project</h2>
                 <p>
                     This is my final year dissertion project.
                     During my research, I have found out that there were lack of awareness about the endangered species around world.
@@ -136,9 +139,31 @@ function ProjectEndangeredSpecies (){
             </section>
 
 
-            <h2> <span>03. </span>Project Features</h2>
+
+            <section  className='projectDesignSection'>
+                <h2> <span>03. </span>Project Designs/Layout</h2>
+                <div className="projectDesignFrame">
+                    <images className="projectDesignImages" style={{backgroundImage: `url(${endangeredSpeciesDesign1})`}}></images>
+                    <images className="projectDesignImages" style={{backgroundImage: `url(${endangeredSpeciesDesign2})`}}></images>
+                </div>
+                    
+                <div className="projectDesignFrame">
+                    <images className="projectDesignImages" style={{backgroundImage: `url(${endangeredSpeciesDesign3})`}}></images>
+                    <div className="projectDesignParagraph">
+                        <Link exact to="https://miro.com/app/board/uXjVObVI6_k=/?share_link_id=259917343989" target="_blank" className="frame">
+                            <button className="card">
+                                <image style={{backgroundImage: `url(${PlayIcon})`}}></image>
+                            </button>
+                        </Link>
+                        <line></line>
+                        <p>This website was designed using Miro Whiteboard. Click the button above to view the design of this project.</p>
+                    </div>
+                   
+                </div>
+            </section>
 
             <section  className='projectFeaturesSection'>
+                <h2> <span>04. </span>Project Features</h2>
                 <div className="featureFrame">
 
                     <image className="featureImage" style={{backgroundImage: `url(${FontSizeIncreaserImg})`}}></image>

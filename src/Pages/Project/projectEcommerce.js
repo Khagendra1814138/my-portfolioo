@@ -12,13 +12,15 @@ import ReactIcon from "../../Images/skillsIcons/reactIcon.png"
 import HtmlIcon from "../../Images/skillsIcons/htmlIcon.png";
 import CssIcon from "../../Images/skillsIcons/cssIcon.png";
 import JsIcon from "../../Images/skillsIcons/jsIcon.png";
-import MiroIcon from "../../Images/skillsIcons/miroIcon.png";
+import FigmaIcon from "../../Images/skillsIcons/figmaIcon.png";
 import PhotopeaIcon from "../../Images/skillsIcons/photopeaIcon.png";
 
 import GithubIcon from "../../Images/skillsIcons/githubIcon.png";
 import PlayIcon from "../../Images/skillsIcons/playIcon.png";
 
-import FontSizeIncreaserImg from "../../Images/projectsImage/fontSizeIncreaser.PNG";
+import EcommerceFeaturFilter from "../../Images/projectsImage/EcommerceFeaturFilter.PNG";
+import EcommerceFeaturBag from "../../Images/projectsImage/EcommerceFeaturBag.PNG";
+
 
 function ProjectEcommerce (){
 
@@ -73,8 +75,8 @@ function ProjectEcommerce (){
                         <image style={{backgroundImage: `url(${ReactIcon})`}}></image>
                     </span>
 
-                    <span>Miro Board
-                        <image style={{backgroundImage: `url(${MiroIcon})`}}></image>
+                    <span>Figma
+                        <image style={{backgroundImage: `url(${FigmaIcon})`}}></image>
                     </span>
 
                     <span>Photopea
@@ -100,34 +102,63 @@ function ProjectEcommerce (){
 
             </div>
 
-            <h2> <span>02. </span>About this Project</h2>
 
 
             <section ref={aboutRef} className={`${'aboutSecton'} ${aboutIsVisible ? "showAnimateEndangeredSpecies" : ' '}`}>
+                <h2> <span>02. </span>About this Project</h2>
                 <p>
-                    This is my final year dissertion project.
-                    During my research, I have found out that there were lack of awareness about the endangered species around world.
-                    And there are millions of web applications facing lawsuits due to lack of usability features.
-                    This project is an interactive educational web application that raises awareness about the enangered species and how you can help them.
-                    For example, different species of endangered species, what are the threats, and, how you can support them.
-                    In addition, the web application provides features that provides usability features for visually impared users like colourblind and weak vision users.
+                   This is an Ecommerce website that focuses on selling shoes of brands such as nike, adids, puma etc. 
+                   This is my first ecommerce website, created uing react.
                 </p>
             </section>
 
 
-            <h2> <span>03. </span>Project Features</h2>
+            <section  className='projectDesignSection'>
+                <h2> <span>03. </span>Project Designs/Layout</h2>
+                <div className="projectDesignFrame">
+                    <images className="projectDesignImages" ></images>
+                    <images className="projectDesignImages" ></images>
+                </div>
+                    
+                <div className="projectDesignFrame">
+                    <images className="projectDesignImages" ></images>
+                    <div className="projectDesignParagraph">
+                        <Link exact to="https://miro.com/app/board/uXjVObVI6_k=/?share_link_id=259917343989" target="_blank" className="frame">
+                            <button className="card">
+                                <image style={{backgroundImage: `url(${PlayIcon})`}}></image>
+                            </button>
+                        </Link>
+                        <line></line>
+                        <p>This website was designed using Figma. Click the button above to view the design of this project.</p>
+                    </div>
+                   
+                </div>
+            </section>
+
 
             <section  className='projectFeaturesSection'>
+                <h2> <span>04. </span>Project Features</h2>
                 <div className="featureFrame">
-
-                    <image className="featureImage" style={{backgroundImage: `url(${FontSizeIncreaserImg})`}}></image>
+                    <image className="featureImage" style={{backgroundImage: `url(${EcommerceFeaturFilter})`}}></image>
                     <div className="featureParagraphFrame">
-                        <h3>Font size increaser</h3>
-                        <p>Allows users with weak vision to increase the size of the texts inside the paragraphs.</p>
+                        <h3>Filter Options</h3>
+                        <p>
+                            Allows the users to select specific shoes based on one or multiple options. 
+                            For example, select shoes based on their colour, brands, sport type...
+                        </p>
                     </div>
 
                     <line></line>
-            
+
+                    <div className="featureParagraphFrame">
+                        <h3>Add to bag</h3>
+                        <p>
+                            Allows the user to add multiple items to the shopping cart. 
+                            Inside the cart, the users can add or remove the product quantity.
+                        </p>
+                    </div>
+                    <image className="featureImage" style={{backgroundImage: `url(${EcommerceFeaturBag})`}}></image>
+
                 </div>
             </section>
         </div>
