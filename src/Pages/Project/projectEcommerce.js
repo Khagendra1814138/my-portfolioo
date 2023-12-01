@@ -18,6 +18,11 @@ import PhotopeaIcon from "../../Images/skillsIcons/photopeaIcon.png";
 import GithubIcon from "../../Images/skillsIcons/githubIcon.png";
 import PlayIcon from "../../Images/skillsIcons/playIcon.png";
 
+
+import EcommerceDesign1 from "../../Images/projectsImage/EcommerceDesign1.PNG";
+import EcommerceDesign2 from "../../Images/projectsImage/EcommerceDesign2.PNG";
+import EcommerceDesign3 from "../../Images/projectsImage/EcommerceDesign3.PNG";
+
 import EcommerceFeaturFilter from "../../Images/projectsImage/EcommerceFeaturFilter.PNG";
 import EcommerceFeaturBag from "../../Images/projectsImage/EcommerceFeaturBag.PNG";
 
@@ -116,14 +121,14 @@ function ProjectEcommerce (){
             <section  className='projectDesignSection'>
                 <h2> <span>03. </span>Project Designs/Layout</h2>
                 <div className="projectDesignFrame">
-                    <images className="projectDesignImages" ></images>
-                    <images className="projectDesignImages" ></images>
+                    <images className="projectDesignImages" style={{backgroundImage: `url(${EcommerceDesign1})`}}></images>
+                    <images className="projectDesignImages" style={{backgroundImage: `url(${EcommerceDesign2})`}}></images>
                 </div>
                     
                 <div className="projectDesignFrame">
-                    <images className="projectDesignImages" ></images>
+                    <images className="projectDesignImages" style={{backgroundImage: `url(${EcommerceDesign3})`}}></images>
                     <div className="projectDesignParagraph">
-                        <Link exact to="https://miro.com/app/board/uXjVObVI6_k=/?share_link_id=259917343989" target="_blank" className="frame">
+                        <Link exact to="https://www.figma.com/file/EUbXOr1NI6dt0zNz9vwCMT/Creps-Check-ECommerce?type=design&node-id=0%3A1&mode=design&t=FYQSdlcFzzFqPcdv-1" target="_blank" className="frame">
                             <button className="card">
                                 <image style={{backgroundImage: `url(${PlayIcon})`}}></image>
                             </button>
