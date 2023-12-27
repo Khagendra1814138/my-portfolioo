@@ -150,7 +150,7 @@ function ProjectEndangeredSpecies (){
                 <div className="projectDesignFrame">
                     <images className="projectDesignImages" style={{backgroundImage: `url(${endangeredSpeciesDesign3})`}}></images>
                     <div className="projectDesignParagraph">
-                        <Link exact to="https://miro.com/app/board/uXjVObVI6_k=/?share_link_id=259917343989" target="_blank" className="frame">
+                        <Link exact to="../https://miro.com/app/board/uXjVObVI6_k=/?share_link_id=259917343989" target="_blank" className="frame">
                             <button className="card">
                                 <image style={{backgroundImage: `url(${PlayIcon})`}}></image>
                             </button>
