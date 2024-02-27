@@ -211,10 +211,10 @@ function Projects() {
 
 
                     <div className="sketchCanvas">
-                        <Link exact to="https://miro.com/app/board/uXjVObVI6_k=/?share_link_id=259917343989" target="_blank" className="projectCardFrame">
+                        <Link exact to="https://www.figma.com/file/kmzy2Hi84QHweTaT8gKh2P/Endangered-Species?type=design&node-id=1%3A2&mode=design&t=2oBYWjVGA6yxLMfU-1" target="_blank" className="projectCardFrame">
                             <div className="projectCard">
                                 <image style={{backgroundImage: `url(${endangeredSpeciesDesign2})`}}></image>
-                                <h2>Endangered Species Wireframe</h2>
+                                <h2>Endangered Species Figma</h2>
                             </div>
                             <div className="projectCardShadow"></div>
                         </Link>
